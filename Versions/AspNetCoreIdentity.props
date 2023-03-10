@@ -1,0 +1,29 @@
+<!--
+ * AspNetCoreIdentity.props
+ * 
+ *   Created: 2023-01-28-07:27:42
+ *   Modified: 2023-01-28-07:27:42
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+   <PropertyGroup>
+    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.1.6,)</AspNetCoreIdentityVersion>
+    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[2.2.0,)</AspNetCoreIdentityVersion>
+    <AspNetCoreIdentityVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</AspNetCoreIdentityVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AspNetCoreIdentityEfCore Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.1.6,)</AspNetCoreIdentityEfCore>
+    <AspNetCoreIdentityEfCore Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[2.2.0,)</AspNetCoreIdentityEfCore>
+    <AspNetCoreIdentityEfCore Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[5.0.17,)</AspNetCoreIdentityEfCore>
+    <AspNetCoreIdentityEfCore Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">[5.0.17,)</AspNetCoreIdentityEfCore>
+    <AspNetCoreIdentityEfCore Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.13,)</AspNetCoreIdentityEfCore>
+    <AspNetCoreIdentityEfCore Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.2,)</AspNetCoreIdentityEfCore>
+    <AspNetCoreIdentityEfCore Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</AspNetCoreIdentityEfCore>
+  </PropertyGroup>
+</Project>

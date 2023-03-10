@@ -1,0 +1,20 @@
+<!--
+ * JsonPatch.props
+ * 
+ *   Created: 2023-01-28-07:40:49
+ *   Modified: 2023-01-28-07:40:49
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <PropertyGroup Label="Json Patch">
+    <JsonPatchVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">[1.0.0,)</JsonPatchVersion>
+    <JsonPatchVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.1.2,)</JsonPatchVersion>
+    <JsonPatchVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[7.0.2,)</JsonPatchVersion>
+    <JsonPatchVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">Unsupported</JsonPatchVersion>
+  </PropertyGroup>
+</Project>

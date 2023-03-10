@@ -1,0 +1,28 @@
+<!--
+ * RemoveUnsupportedPackageVersions.targets
+ * 
+ *   Created: 2023-02-25-01:41:22
+ *   Modified: 2023-02-25-01:41:31
+ * 
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project InitialTargets="RemoveUnsupportedPackageVersions">
+  <Target Name="RemoveUnsupportedPackageVersions">
+    <Message importance="High" Text="Removing unsupported package versions!" />
+    <ItemGroup>
+        <!-- Remove the unsupported package references -->
+      <UnsupportedPackageReference Include="@(PackageReference->WithMetadataValue('Version', 'Unsupported'))"  />
+      <PackageReferenceWithNoVersion Include="@(PackageReference->WithMetadataValue('Version', ''))"/>
+    </ItemGroup>
+    <Warning Text="Packaged with unsupported versions: @(UnsupportedPackageReference)" Condition="@(PackageReference->WithMetadataValue('Version', 'Unsupported')->Count()) &gt; 0"/>
+    <Warning Text="Packaged with no version number: @(PackageReferenceWithNoVersion)" Condition="@(PackageReference->WithMetadataValue('Version', '')->Count()) &gt; 0"   />
+    <ItemGroup>
+      <PackageReference Remove="@(PackageReference->WithMetadataValue('Version', 'Unsupported'))" />
+      <PackageReference Remove="@(PackageReference->WithMetadataValue('Version', ''))" />
+    </ItemGroup>
+  </Target>
+</Project>

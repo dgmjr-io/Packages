@@ -1,0 +1,30 @@
+<!--
+ * AutoMapper.props
+ * 
+ *   Created: 2023-01-28-07:11:49
+ *   Modified: 2023-01-28-07:11:49
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <PropertyGroup Label="AutoMapper">
+    <AutoMapperVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">Unsupported</AutoMapperVersion>
+    <AutoMapperVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">[6.2.2,)</AutoMapperVersion>
+    <AutoMapperVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[7.0.1,)</AutoMapperVersion>
+    <AutoMapperVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[10.1.1,)</AutoMapperVersion>
+    <AutoMapperVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[12.0.1,)</AutoMapperVersion>
+
+    <AutoMapperDIVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">Unsupported)</AutoMapperDIVersion>
+    <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">[2.0.1,)</AutoMapperDIVersion>
+    <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[8.1.1,)</AutoMapperDIVersion>
+    <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[12.0.0,)</AutoMapperDIVersion>
+
+    <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.0.5,)</AutoMapperExpresionMappingVersion>
+    <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[4.1.5,)</AutoMapperExpresionMappingVersion>
+    <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[6.0.3,)</AutoMapperExpresionMappingVersion>
+  </PropertyGroup>
+</Project>

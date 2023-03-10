@@ -1,0 +1,23 @@
+<!--
+ * EFCore.props
+ * 
+ *   Created: 2023-01-28-07:23:13
+ *   Modified: 2023-01-28-07:23:13
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+	<PropertyGroup Label="EFCore">
+		<EfCoreVersion>[1.1.6,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.1.6,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[2.2.0,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[5.0.17,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[7.0.2,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.2,)</EfCoreVersion>
+		<EfCoreVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</EfCoreVersion>
+	</PropertyGroup>
+</Project>

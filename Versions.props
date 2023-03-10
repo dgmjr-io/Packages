@@ -1,0 +1,181 @@
+<!--
+ Versions.props
+ 
+  Created: 2022-10-21-08:49:24
+  Modified: 2022-10-29-02:02:09
+ 
+  Author: David G. Mooore, Jr. <david@dgmjr.io>
+  
+  Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+   License: MIT (https://opensource.org/licenses/MIT)
+-->
+<Project Condition="'$(Versions_Props)' == ''" ToolsVersion="Current">
+	<PropertyGroup>
+		<Versions_Props>Imported</Versions_Props>
+		<IncludeInSolutionFile>false</IncludeInSolutionFile>
+  </PropertyGroup>
+	<PropertyGroup Label="Compatible with .NET Standard 1.0">
+		<Net80CompatibleFrameworks>net8.0</Net80CompatibleFrameworks>
+		<Net70CompatibleFrameworks>$(Net80CompatibleFrameworks);net7.0</Net70CompatibleFrameworks>
+		<Net60CompatibleFrameworks>$(Net70CompatibleFrameworks);net6.0</Net60CompatibleFrameworks>
+		<Net50CompatibleFrameworks>$(Net60CompatibleFrameworks);net6.0</Net50CompatibleFrameworks>
+		<NetStd21CompatibleFrameworks>$(Net50CompatibleFrameworks);netstandard2.1</NetStd21CompatibleFrameworks>
+		<NetStd20CompatibleFrameworks>$(NetStd21CompatibleFrameworks);netstandard2.0</NetStd20CompatibleFrameworks>
+		<NetStd16CompatibleFrameworks>$(NetStd20CompatibleFrameworks);netstandard1.6</NetStd16CompatibleFrameworks>
+		<NetStd15CompatibleFrameworks>$(NetStd16CompatibleFrameworks);netstandard1.5</NetStd15CompatibleFrameworks>
+		<NetStd14CompatibleFrameworks>$(NetStd15CompatibleFrameworks);netstandard1.4</NetStd14CompatibleFrameworks>
+		<NetStd13CompatibleFrameworks>$(NetStd14CompatibleFrameworks);netstandard1.3</NetStd13CompatibleFrameworks>
+		<NetStd13CompatibleFrameworks>$(NetStd13CompatibleFrameworks);netstandard1.3</NetStd13CompatibleFrameworks>
+		<NetStd12CompatibleFrameworks>$(NetStd13CompatibleFrameworks);netstandard1.2</NetStd12CompatibleFrameworks>
+		<NetStd11CompatibleFrameworks>$(NetStd12CompatibleFrameworks);netstandard1.1</NetStd11CompatibleFrameworks>
+		<NetStd10CompatibleFrameworks>$(NetStd11CompatibleFrameworks);netstandard1.0</NetStd10CompatibleFrameworks>
+	</PropertyGroup>
+	<PropertyGroup Label="Master Versions">
+		<DefineConstants Condition="$(Net80CompatibleFrameworks.Contains('$(TargetFramework)'))">$(DefineConstants);NET8_0;NET8_0_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(Net70CompatibleFrameworks.Contains('$(TargetFramework)'))">$(DefineConstants);NET7_0;NET7_0_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(Net600CompatibleFrameworks.Contains('$(TargetFramework)'))">$(DefineConstants);NET6_0;NET6_0_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd21CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD2_1;NETSTANDARD2_1_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd20CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD2_0;NETSTANDARD2_0_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd16CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD1_6;NETSTANDARD1_6_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd15CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD1_5;NETSTANDARD1_5_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd14CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD1_4;NETSTANDARD1_4_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd13CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD1_3;NETSTANDARD1_3_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd12CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD1_2;NETSTANDARD1_2_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd11CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD1_1;NETSTANDARD1_1_OR_GREATER</DefineConstants>
+		<DefineConstants Condition="$(NetStd10CompatibleFrameworks.Contains($(TargetFramework)))">$(DefineConstants);NETSTANDARD1_0;NETSTANDARD1_0_OR_GREATER</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<DefineConstants Include="$(DefineConstants)" />
+	</ItemGroup>
+	<ItemGroup Label="Master Versions">
+		<CompatibleFrameworks Condition="$(Net80CompatibleFrameworks.Contains('$(TargetFramework)'))" Include="$(Net80CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(Net70CompatibleFrameworks.Contains('$(TargetFramework)'))" Include="$(Net70CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(Net600CompatibleFrameworks.Contains('$(TargetFramework)'))" Include="$(Net600CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(Net500CompatibleFrameworks.Contains('$(TargetFramework)'))" Include="$(Net500CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd21CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd21CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd20CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd20CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd16CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd16CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd15CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd15CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd14CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd14CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd13CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd13CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd12CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd12CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd11CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd11CompatibleFrameworks)" />
+		<CompatibleFrameworks Condition="$(NetStd10CompatibleFrameworks.Contains($(TargetFramework)))" Include="$(NetStd10CompatibleFrameworks)" />
+	</ItemGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.0'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v1.0</TargetFrameworkVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.1'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v1.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.2'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v1.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.3'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v1.3</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.4'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v1.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.5'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v1.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard1.6'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v1.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETStandard</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v2.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v3.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net5.0'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net7.0'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v7.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v8.0</TargetFrameworkVersion>
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+    <TargetFrameworkMoniker Condition="'$(TargetFrameworkMoniker)' == ''">$(TargetFrameworkIdentifier),Version=$(TargetFrameworkVersion)</TargetFrameworkMoniker>
+    <TargetPlatformIdentifier Condition="'$(TargetPlatformIdentifier)' == '' and '$(_EnableDefaultWindowsPlatform)' != 'false'">Windows</TargetPlatformIdentifier>
+    <!-- <TargetPlatformVersion Condition="'$(TargetPlatformVersion)' == '' and '$(_EnableDefaultWindowsPlatform)' != 'false'">7.0</TargetPlatformVersion> -->
+    <!-- <TargetPlatformSdkPath Condition="'$(TargetPlatformSdkPath)' == '' and '$(TargetPlatformSdkRootOverride)' != ''">$(TargetPlatformSdkRootOverride)\</TargetPlatformSdkPath> -->
+    <!-- <TargetPlatformSdkPath Condition="'$(TargetPlatformSdkPath)' == '' and '$(TargetPlatformIdentifier)' == 'Windows' and $([MSBuild]::IsOSPlatform('Windows')) and '$(MSBuildRuntimeType)' != 'Core'">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\Software\Microsoft\Microsoft SDKs\Windows\v$(TargetPlatformVersion)', InstallationFolder, null, RegistryView.Registry32, RegistryView.Default))</TargetPlatformSdkPath> -->
+    <!-- <TargetPlatformSdkPath Condition="'$(TargetPlatformSdkPath)' == ''">$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformSDKLocation($(TargetPlatformIdentifier), $(TargetPlatformVersion)))</TargetPlatformSdkPath> -->
+    <!-- <TargetPlatformSdkMetadataLocation Condition="'$(TargetPlatformSdkMetadataLocation)' == '' and Exists('$(TargetPlatformSdkPath)')">$(TargetPlatformSdkPath)Windows Metadata</TargetPlatformSdkMetadataLocation> -->
+    <!-- <TargetPlatformSdkMetadataLocation Condition="Exists('$(TargetPlatformSdkPath)') and ('$(TargetPlatformSdkMetadataLocation)' == '' or !Exists('$(TargetPlatformSdkMetadataLocation)'))">$(TargetPlatformSdkPath)References\CommonConfiguration\Neutral</TargetPlatformSdkMetadataLocation> -->
+    <!-- <TargetPlatformWinMDLocation Condition="'$(TargetPlatformWinMDLocation)' == '' and Exists('$(TargetPlatformSdkMetadataLocation)')">$(TargetPlatformSdkMetadataLocation)</TargetPlatformWinMDLocation>
+    <UseOSWinMdReferences Condition="'$(UseOSWinMdReferences)' == '' and ('$(TargetPlatformWinMDLocation)' == '' and '$(TargetPlatformIdentifier)' == 'Windows' and '$(TargetPlatformVersion)' &gt; '7.0')">true</UseOSWinMdReferences>
+    <TargetPlatformWinMDLocation Condition="'$(UseOsWinMdReferences)' == 'true'">$(WinDir)\System32\WinMetadata</TargetPlatformWinMDLocation> -->
+    <!-- <TargetPlatformMoniker Condition="'$(TargetPlatformMoniker)' == '' and '$(TargetPlatformIdentifier)' != '' and '$(TargetPlatformVersion)' != ''">$(TargetPlatformIdentifier),Version=$(TargetPlatformVersion)</TargetPlatformMoniker> -->
+    <!-- <TargetPlatformDisplayName Condition="'$(TargetPlatformDisplayName)' == ''">$([Microsoft.Build.Utilities.ToolLocationHelper]::GetPlatformSDKDisplayName($(TargetPlatformIdentifier), $(TargetPlatformVersion)))</TargetPlatformDisplayName> -->
+  </PropertyGroup>
+
+
+	<PropertyGroup Label="MediatR (.NET Standard 1.1)">
+		<MediatRVersion>[11.1.1-JustinWritesCodeMods,)</MediatRVersion>
+		<MediatRDIVersion>[2.0.0,)</MediatRDIVersion>
+		<MediatRExtensionsFluentValidationAspNetCoreVersion />
+	</PropertyGroup>
+  
+  <PropertyGroup>
+    <MicrosoftExtensionsLoggingVersion>1.1.2</MicrosoftExtensionsLoggingVersion>
+    <MicrosoftExtensionsLoggingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">7.0.0</MicrosoftExtensionsLoggingVersion>
+  </PropertyGroup>
+
+	<!-- <PropertyGroup Label="MediatR (.NET Standard 2.0)" Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">
+    <MediatRVersion>[9.0.0,)</MediatRVersion>
+    <MediatRDIVersion>[9.0.0,)</MediatRDIVersion>
+    <MediatRExtensionsFluentValidationAspNetCoreVersion>[1.2.0,)</MediatRExtensionsFluentValidationAspNetCoreVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="MediatR (&gt;= .NET Standard 2.1)" Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">
+    <MediatRVersion>[11.0.0,)</MediatRVersion>
+    <MediatRDIVersion>[1.0.0,)</MediatRDIVersion>
+    <MediatRExtensionsFluentValidationAspNetCoreVersion>[3.0.0,)</MediatRExtensionsFluentValidationAspNetCoreVersion>
+  </PropertyGroup> -->
+  <PropertyGroup>
+    <MediatRContractsVersion>[1.0.1,)</MediatRContractsVersion>
+  </PropertyGroup>
+  <Target Name="Display" BeforeTargets="Build">
+    <Message Text="PackageReference: @(PackageReference->'%(Identity) - %(Version)')" Importance="High" />
+  </Target>
+  <Target Name="__WriteStuff" AfterTargets="Display">
+    <Message Importance="High" Text="TargetFramework: $(TargetFramework)" />
+    <Message Importance="High" Text="--- (inside Packages.props) --- " />
+    <Message Importance="High" Text="EfCoreVersion: $(EfCoreVersion)" />
+    <Message Importance="High" Text="TargetFramework: $(TargetFramework)" />
+    <Message Importance="High" Text="DefineConstants: $(DefineConstants)" />
+    <Message Importance="High"  Text="NETSTANDARD1_3_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD1_3_OR_GREATER')): [1.1.6,)" />
+    <Message Importance="High"  Text="NETSTANDARD2_0_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD2_0_OR_GREATER')): [2.2.0,)" />
+    <Message Importance="High"  Text="NETSTANDARD2_1_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD2_1_OR_GREATER')): [5.0.17,)" />
+    <Message Importance="High"  Text="NET6_0_OR_GREATER: $(DefineConstants).Contains('NET6_0_OR_GREATER')): [6.0.12,)" />
+    <Message Importance="High"  Text="NET7_0_OR_GREATER: $(DefineConstants).Contains('NET7_0_OR_GREATER')): [7.0.1,)" />
+  </Target>
+</Project>
