@@ -13,8 +13,20 @@
 <Project ToolsVersion="Current">
 	<PropertyGroup>
 		<IncludeInSolutionFile>false</IncludeInSolutionFile>
+		<!-- <CustomBeforeCentralPackageVersionsProps>$(MSBuildThisFileDirectory)Versions.props</CustomBeforeCentralPackageVersionsProps> -->
+		<!-- <CustomBeforeCentralPackageVersionsTargets>$(MSBuildThisFileDirectory)</CustomBeforeCentralPackageVersionsTargets> -->
 	</PropertyGroup>
-  <!-- <Import Project="./Versions.props" /> -->
-	<Import Project="./Packages/*.pkgs" />
-	<Import Project="./Versions/*.*" />
+	<Import Project="$(MSBuildThisFileDirectory)RemoveUnsupportedPackageVersions.targets" />
+	<Import Project="$(MSBuildThisFileDirectory)Versions.props" />
+	<Import Project="$(MSBuildThisFileDirectory)Versions/*.*" />
+	<Import Project="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" />
+	<Import Project="$(MSBuildThisFileDirectory)Packages/*.pkgs" />	
+  <ItemGroup>
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.props" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).json" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Packages.pkgs" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Packages/*.*" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions/*.*" />
+  </ItemGroup>
 </Project>

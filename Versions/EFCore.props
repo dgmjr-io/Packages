@@ -16,8 +16,8 @@
 		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.1.6,)</EfCoreVersion>
 		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[2.2.0,)</EfCoreVersion>
 		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[5.0.17,)</EfCoreVersion>
-		<EfCoreVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[7.0.2,)</EfCoreVersion>
-		<EfCoreVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.2,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[7.0.4,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.4,)</EfCoreVersion>
 		<EfCoreVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</EfCoreVersion>
 	</PropertyGroup>
 </Project>

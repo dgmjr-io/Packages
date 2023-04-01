@@ -1,0 +1,29 @@
+<!--
+ * PowerShell.props
+ * 
+ *   Created: 2023-03-23-07:45:44
+ *   Modified: 2023-03-23-08:59:32
+ * 
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+<Project>
+    <PropertyGroup>
+        <SystemManagementAutomationVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">6.1.2</SystemManagementAutomationVersion>
+        <SystemManagementAutomationVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">6.1.3</SystemManagementAutomationVersion>
+        <SystemManagementAutomationVersion Condition="$(DefineConstants.Contains('NETCOREAPP3_1_OR_GREATER'))">7.0.13</SystemManagementAutomationVersion>
+        <SystemManagementAutomationVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">7.1.7</SystemManagementAutomationVersion>
+        <SystemManagementAutomationVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">7.2.10</SystemManagementAutomationVersion>
+        <SystemManagementAutomationVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">7.3.3</SystemManagementAutomationVersion>
+    </PropertyGroup>
+    <PropertyGroup>
+        <PowerShellSDKVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">6.1.2</PowerShellSDKVersion>
+        <PowerShellSDKVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">6.1.6</PowerShellSDKVersion>
+        <PowerShellSDKVersion Condition="$(DefineConstants.Contains('NETCOREAPP3_1_OR_GREATER'))">7.0.13</PowerShellSDKVersion>
+        <PowerShellSDKVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">7.1.7</PowerShellSDKVersion>
+        <PowerShellSDKVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">7.2.10</PowerShellSDKVersion>
+        <PowerShellSDKVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">7.3.3</PowerShellSDKVersion>
+    </PropertyGroup>
+</Project>
