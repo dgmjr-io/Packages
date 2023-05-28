@@ -1,0 +1,32 @@
+<!--
+ * RemoveUnsupportedPackageVersions.targets
+ * 
+ *   Created: 2023-02-25-01:41:22
+ *   Modified: 2023-02-25-01:41:31
+ * 
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <Target Name="DisplayImportedPackageReferences" BeforeTargets="GetPackageContents">
+    <Message Text="Imported package references: @(PackageReference->'%(Identity) (%(Version))')" Importance="High" />
+  </Target>
+
+  <Target Name="RemoveUnsupportedPackageVersions" BeforeTargets="GetPackageContents">
+    <Message importance="High" Text="Removing unsupported package versions!" />
+    <ItemGroup>
+        <!-- Remove the unsupported package references -->
+      <UnsupportedPackageReference Include="@(PackageReference->WithMetadataValue('Version', 'Unsupported'))"  />
+      <PackageReferenceWithNoVersion Include="@(PackageReference->WithMetadataValue('Version', ''))"/>
+    </ItemGroup>
+    <Warning Text="Packages with unsupported versions being removed: @(UnsupportedPackageReference)" Condition="@(UnsupportedPackageReference->Count()) &gt; 0"/>
+    <Warning Text="Packages with no version number being removed: @(PackageReferenceWithNoVersion)" Condition="@(PackageReferenceWithNoVersion->Count()) &gt; 0"   />
+    <ItemGroup>
+      <PackageReference Remove="@(UnsupportedPackageReference)" />
+      <PackageReference Remove="@(PackageReferenceWithNoVersion)" />
+    </ItemGroup>
+  </Target>
+</Project>

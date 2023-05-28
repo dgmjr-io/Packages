@@ -1,0 +1,32 @@
+<!--
+ * Packages.pkgs
+ * 
+ *   Created: 2023-02-25-01:40:58
+ *   Modified: 2023-02-25-01:40:59
+ * 
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project ToolsVersion="Current">
+	<PropertyGroup>
+		<IncludeInSolutionFile>false</IncludeInSolutionFile>
+		<!-- <CustomBeforeCentralPackageVersionsProps>$(MSBuildThisFileDirectory)Versions.props</CustomBeforeCentralPackageVersionsProps> -->
+		<!-- <CustomBeforeCentralPackageVersionsTargets>$(MSBuildThisFileDirectory)</CustomBeforeCentralPackageVersionsTargets> -->
+	</PropertyGroup>
+	<Import Project="$(MSBuildThisFileDirectory)RemoveUnsupportedPackageVersions.targets" />
+	<Import Project="$(MSBuildThisFileDirectory)Versions.props" />
+	<Import Project="$(MSBuildThisFileDirectory)Versions/*.*" />
+	<Import Project="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" />
+	<Import Project="$(MSBuildThisFileDirectory)Packages/*.pkgs" />	
+  <ItemGroup>
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.props" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).json" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Packages.pkgs" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Packages/*.*" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions/*.*" />
+  </ItemGroup>
+</Project>
