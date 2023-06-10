@@ -18,5 +18,5 @@
 	</PropertyGroup>
 	<PropertyGroup>
 		<MediatRContractsVersion>[1.0.1,)</MediatRContractsVersion>
-  </PropertyGroup>
+    </PropertyGroup>
 </Project>

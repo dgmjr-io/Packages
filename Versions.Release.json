@@ -30,7 +30,7 @@
   "Dgmjr.AspNetCore.Startup": "0.0.1-Local",
   "Dgmjr.AspNetCore.Swagger": "0.0.1-Local",
   "Dgmjr.Attributes": "0.0.1-Local",
-  "Dgmjr.Caching.Memory": "0.0.1-Local",
+  "CacheAccesor.Memory": "0.0.1-Local",
   "Dgmjr.CodeGeneration.Abstractions": "0.0.1-Local",
   "Dgmjr.CodeGeneration.AttributeSymbolExtensions": "0.0.1-Local",
   "Dgmjr.CodeGeneration.Constants": "0.0.1-Local",
