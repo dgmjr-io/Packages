@@ -11,6 +11,13 @@
 -->
 
 <Project>
+  <PropertyGroup>
+    <RestoreDependsOn>
+      $(RestoreDependsOn);
+      RemoveUnsupportedPackageVersions;
+    </RestoreDependsOn>
+  </PropertyGroup>
+
   <Target Name="DisplayImportedPackageReferences" BeforeTargets="GetPackageContents">
     <Message Text="Imported package references: @(PackageReference->'%(Identity) (%(Version))')" Importance="High" />
   </Target>

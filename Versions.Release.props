@@ -19,6 +19,7 @@
     <PackageReference Update="BakckroomSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BakckroomSdk'" />
     <PackageReference Update="BuildHelper" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BuildHelper'" />
     <PackageReference Update="BuildHelper2" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BuildHelper2'" />
+    <PackageReference Update="CacheAccesor.Memory" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CacheAccesor.Memory'" />
     <PackageReference Update="ConfigurationSubstitution.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'ConfigurationSubstitution.Usings'" />
     <PackageReference Update="CsprojPackager" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CsprojPackager'" />
     <PackageReference Update="Csv2Sql" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Csv2Sql'" />
@@ -37,7 +38,6 @@
     <PackageReference Update="Dgmjr.AspNetCore.Startup" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Startup'" />
     <PackageReference Update="Dgmjr.AspNetCore.Swagger" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Swagger'" />
     <PackageReference Update="Dgmjr.Attributes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Attributes'" />
-    <PackageReference Update="CacheAccesor.Memory" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CacheAccesor.Memory'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Abstractions'" />
     <PackageReference Update="Dgmjr.CodeGeneration.AttributeSymbolExtensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.AttributeSymbolExtensions'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Constants'" />
@@ -112,7 +112,7 @@
     <PackageReference Update="Dgmjr.Tuples" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Tuples'" />
     <PackageReference Update="Dgmjr.TypeScript" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.TypeScript'" />
     <PackageReference Update="Dgmjr.UnRefJsonYaml" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.UnRefJsonYaml'" />
-    <PackageReference Update="DgmjrSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
+    <PackageReference Update="DgmjrSdk" Version="[0.0.17, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
     <PackageReference Update="Directory.Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Directory.Build'" />
     <PackageReference Update="DirZ.Api" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DirZ.Api'" />
     <PackageReference Update="DirZ.EntityFrameworkCore" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DirZ.EntityFrameworkCore'" />
