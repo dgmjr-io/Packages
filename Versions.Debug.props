@@ -82,7 +82,7 @@
     <PackageReference Update="Dgmjr.System.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.System.Extensions'" />
     <PackageReference Update="Dgmjr.Tuples" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Tuples'" />
     <PackageReference Update="Dgmjr.TypeScript" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.TypeScript'" />
-    <PackageReference Update="DgmjrSdk" Version="[1.0.0, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
+    <PackageReference Update="DgmjrSdk" Version="[0.0.18-beta.0.2, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
     <PackageReference Update="Directory.Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Directory.Build'" />
     <PackageReference Update="DirZ.Api" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DirZ.Api'" />
     <PackageReference Update="DirZ.EntityFrameworkCore" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DirZ.EntityFrameworkCore'" />
@@ -103,8 +103,8 @@
     <PackageReference Update="Invoke-Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Invoke-Build'" />
     <PackageReference Update="Invoke-DotNetCli" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Invoke-DotNetCli'" />
     <PackageReference Update="InvokeBuild" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'InvokeBuild'" />
-    <PackageReference Update="InvokeDotnetCli" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'InvokeDotnetCli'" />
-    <PackageReference Update="JustInTimeVersioningSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'JustInTimeVersioningSdk'" />
+    <PackageReference Update="InvokeDotnetCli" Version="[0.0.3, )" Condition="'$(PackageId)' != 'InvokeDotnetCli'" />
+    <PackageReference Update="JustInTimeVersioningSdk" Version="[0.0.3, )" Condition="'$(PackageId)' != 'JustInTimeVersioningSdk'" />
     <PackageReference Update="libphonenumber-csharp" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'libphonenumber-csharp'" />
     <PackageReference Update="MediatR" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'MediatR'" />
     <PackageReference Update="MetapackageSdk" Version="[0.0.3, )" Condition="'$(PackageId)' != 'MetapackageSdk'" />
@@ -159,6 +159,7 @@
     <PackageReference Update="System.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Usings'" />
     <PackageReference Update="SystemAllUsings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'SystemAllUsings'" />
     <PackageReference Update="Telegram" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Telegram'" />
+    <PackageReference Update="Telegram.Bot" Version="[19.0.0-DgmjrMods, )" Condition="'$(PackageId)' != 'Telegram.Bot'" />
     <PackageReference Update="Telegram.Bot.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Telegram.Bot.Extensions'" />
     <PackageReference Update="Telegram.Bots.EntityFrameworkCore" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Telegram.Bots.EntityFrameworkCore'" />
     <PackageReference Update="Telegram.Bots.Models" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Telegram.Bots.Models'" />
