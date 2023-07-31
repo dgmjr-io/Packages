@@ -1,0 +1,25 @@
+<!--
+ GlobalCodeGenerators.pkgs
+
+   Created: 2022-10-21-08:40:42
+   Modified: 2022-10-30-10:51:38
+
+   Author: David G. Mooore, Jr. <david@dgmjr.io>
+
+   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+        <PropertyGroup>
+            <ThisAssemblyNamespace />
+        </PropertyGroup>
+        <ItemGroup Label="Global Code Generators">
+                <!-- Global Code Generators -->
+            <PackageReference Update="ThisAssembly" Version="[1.2.15,)" PrivateAssets="All" IncludeAssets="build; analyzers;"  />
+            <PackageReference Update="ThisAssembly.Project" Version="[1.2.15,)" PrivateAssets="All" IncludeAssets="build; analyzers;"  />
+            <PackageReference Update="ThisAssembly.Resources" Version="[1.2.15,)" PrivateAssets="All" IncludeAssets="build; analyzers;"  />
+            <PackageReference Update="ThisAssembly.AssemblyInfo" Version="[1.2.15,)" PrivateAssets="All" IncludeAssets="build; analyzers;"  />
+            <PackageReference Update="ThisAssembly.Git" Version="[1.2.15,)" PrivateAssets="All" IncludeAssets="build; analyzers;"  />
+        </ItemGroup>
+</Project>

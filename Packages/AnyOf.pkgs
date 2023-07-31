@@ -1,0 +1,22 @@
+<!--
+ * AnyOf.pkgs
+ * 
+ *   Created: 2022-10-21-11:40:42
+ *   Modified: 2022-11-12-08:46:23
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+     <PackageReference Update="AnyOf.SourceGenerator" Version="0.3.0" />
+     <PackageReference Update="AnyOf" Version="0.3.0" />
+     <PackageReference Update="AnyOf.System.Text.Json" Version="0.3.0" />
+     <PackageReference Update="ValueOf" Version="2.0.31" />
+     <PackageReference Update="OneOf" Version="3.0.243" />
+     <PackageReference Update="OneOf.SourceGenerator" Version="3.0.243" />
+   </ItemGroup>
+</Project>

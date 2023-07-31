@@ -12,10 +12,6 @@
     <PackageReference Update="Azure.Config.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Azure.Config.Usings'" />
     <PackageReference Update="Azure.Identity.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Azure.Identity.Usings'" />
     <PackageReference Update="Azure.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'Azure.Usings'" />
-    <PackageReference Update="Backroom.Bots.AdminApi.MediatR" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Backroom.Bots.AdminApi.MediatR'" />
-    <PackageReference Update="Backroom.Identity" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Backroom.Identity'" />
-    <PackageReference Update="BackroomSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BackroomSdk'" />
-    <PackageReference Update="BakckroomSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BakckroomSdk'" />
     <PackageReference Update="BuildHelper" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BuildHelper'" />
     <PackageReference Update="BuildHelper2" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BuildHelper2'" />
     <PackageReference Update="ConfigurationSubstitution.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'ConfigurationSubstitution.Usings'" />
@@ -84,9 +80,6 @@
     <PackageReference Update="Dgmjr.TypeScript" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.TypeScript'" />
     <PackageReference Update="DgmjrSdk" Version="[0.0.18-beta.0.2, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
     <PackageReference Update="Directory.Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Directory.Build'" />
-    <PackageReference Update="DirZ.Api" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DirZ.Api'" />
-    <PackageReference Update="DirZ.EntityFrameworkCore" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DirZ.EntityFrameworkCore'" />
-    <PackageReference Update="DirZ.Models" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DirZ.Models'" />
     <PackageReference Update="EFC.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'EFC.Usings'" />
     <PackageReference Update="EmbedProjectFile" Version="[0.0.1, )" Condition="'$(PackageId)' != 'EmbedProjectFile'" />
     <PackageReference Update="EnsureReadmeSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'EnsureReadmeSdk'" />
@@ -170,17 +163,11 @@
     <PackageReference Update="TestConsole" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'TestConsole'" />
     <PackageReference Update="Testing" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Testing'" />
     <PackageReference Update="TestingDgmjrSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'TestingDgmjrSdk'" />
-    <PackageReference Update="TestingJustinWritesCodeSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'TestingJustinWritesCodeSdk'" />
     <PackageReference Update="TestNuGetUtils" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'TestNuGetUtils'" />
     <PackageReference Update="tests" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'tests'" />
     <PackageReference Update="TestUsingsSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'TestUsingsSdk'" />
-    <PackageReference Update="TheFuckRUIN2BBro" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'TheFuckRUIN2BBro'" />
     <PackageReference Update="TSProjSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'TSProjSdk'" />
     <PackageReference Update="UsingsSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'UsingsSdk'" />
-    <PackageReference Update="WhatRUIn2BBro" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'WhatRUIn2BBro'" />
-    <PackageReference Update="WhatRUIn2BBro.EntityFrameworkCore" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'WhatRUIn2BBro.EntityFrameworkCore'" />
-    <PackageReference Update="WhatRUIn2BBro.Identity" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'WhatRUIn2BBro.Identity'" />
-    <PackageReference Update="WhatRUIn2BBro.Models" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'WhatRUIn2BBro.Models'" />
     <PackageReference Update="WithoutRootReadme" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'WithoutRootReadme'" />
     <PackageReference Update="WithRootReadme" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'WithRootReadme'" />
     <PackageReference Update="Xunit.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'Xunit.Usings'" />

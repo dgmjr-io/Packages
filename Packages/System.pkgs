@@ -1,0 +1,56 @@
+<!--
+ System.pkgs
+
+   Created: 2022-10-21-11:40:42
+   Modified: 2022-11-01-01:16:41
+
+   Author: David G. Mooore, Jr. <david@dgmjr.io>
+
+   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+ <!-- System -->
+    <ItemGroup Label="System">
+      <PackageReference Update="System.AppDomain" Version="[2.0.9,)" />
+      <PackageReference Update="System.AppDomains" Version="1.1.2" Condition="$(DefinedConstants.Contains('NETSTANDARD2_0_OR_GREATER'))" />
+      <PackageReference Remove="System.AppDomain.AspNetCore" Condition="!$(DefinedConstants.Contains('NETSTANDARD1_5_OR_GREATER'))" />
+      <PackageReference Update="System.CodeDom" Version="[7.0.0,)" />
+      <PackageReference Update="System.Collections.Immutable" Version="[7.0.0,)" />
+      <PackageReference Update="System.ComponentModel.Annotations" Version="[5.0.0,)" />
+      <PackageReference Update="System.ComponentModel" Version="[4.3.0,)" />
+      <PackageReference Update="System.Configuration.ConfigurationManager" Version="[6.0.0,)" />
+      <PackageReference Update="System.Collections.Concurrent" Version="[4.3.0,)" />
+      <PackageReference Update="System.Diagnostics.Tools" Version="[4.3.0,)" />
+      <PackageReference Update="System.Linq" Version="[4.3.0,)" />
+      <PackageReference Update="System.Net.Http" Version="[4.3.4,)" />
+      <PackageReference Update="System.Net.Primitives" Version="[4.3.1,)" />
+      <PackageReference Update="System.Net.WebHeaderCollection" Version="[4.3.0,)" />
+      <PackageReference Update="System.ObjectModel" Version="[4.3.0,)" />
+      <PackageReference Update="System.Reflection" Version="[4.3.0,)" />
+      <PackageReference Update="System.Resources.ResourceManager" Version="[4.3.0,)" />
+      <PackageReference Update="System.Runtime.Extensions" Version="[4.3.0,)" />
+      <PackageReference Update="System.Runtime" Version="[4.3.1,)" />
+      <PackageReference Update="System.Runtime.Numerics" Version="[4.3.0,)" />
+      <PackageReference Update="System.Runtime.Serialization.Primitives" Version="[4.3.0,)" />
+      <!-- <PackageReference Update="System.Runtime" Version="[4.3.1,)" /> -->
+      <PackageReference Update="System.Security.Claims" Version="[4.3.0,)" />
+      <PackageReference Update="System.Security.Cryptography.Xml" Version="[7.0.0,)" />
+      <PackageReference Update="System.Security.Cryptography.Pkcs" Version="[7.0.3,)" />
+      <PackageReference Update="System.Security.Cryptography.X509Certificates" Version="[4.3.2,)" />
+      <PackageReference Update="System.Security.Cryptography.Algorithms" Version="[4.3.1,)" />
+      <PackageReference Update="System.Text.Encoding" Version="[4.3.0,)" />
+      <PackageReference Update="System.Text.RegularExpressions" Version="[4.3.1,)" />
+      <PackageReference Update="System.Threading.Tasks.Extensions" Version="[4.5.4,)" />
+      <PackageReference Update="System.Xml.XDocument" Version="[4.3.0,)" />
+      <PackageReference Update="System.Xml.XPath" Version="[4.3.0,)" />
+      <PackageReference Update="System.Xml.XPath.XDocument" Version="[4.3.0,)" />
+      <PackageReference Update="System.Xml.ReaderWriter" Version="[4.3.1,)" />
+      <PackageReference Update="NETStandard.Library" Version="[2.0.3,)" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="System.Text.Json" Version="[7.0.2,)" />
+      <PackageReference Remove="System.Text.Json" Condition="$(TargetFramework.StartsWith('netstandard1'))" />
+    </ItemGroup>
+</Project>

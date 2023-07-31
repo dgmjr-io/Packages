@@ -1,0 +1,22 @@
+<!--
+ * MSBuild.pkgs
+ * 
+ *   Created: 2022-10-21-11:40:42
+ *   Modified: 2022-11-10-08:59:25
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+<Project>
+  <ItemGroup Label="MSBuild">
+    <PackageReference Update="Microsoft.Build.Framework" Version="$(MSBuildFrameworkVersion)" PrivateAssets="None" />
+
+    <PackageReference Update="Microsoft.Build.Utilities.Core" Version="$(MSBuildCoreUtilitiesCorePackageVersion)" PrivateAssets="None" />    
+
+    <PackageReference Update="Microsoft.Build" PrivateAssets="None" Version="$(MSBuildPackageVersion)" />
+    
+    <PackageReference Update="Microsoft.Build.Tasks.Core" Version="$(MSBuildTasksCoreVersion)" PrivateAssets="None" />
+  </ItemGroup>
+</Project>

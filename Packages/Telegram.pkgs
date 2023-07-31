@@ -1,0 +1,21 @@
+<!--
+ * Telegram.pkgs
+ * 
+ *   Created: 2022-11-23-07:06:33
+ *   Modified: 2022-11-23-02:48:14
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+    <PropertyGroup>
+        <TelegramBotVersion>[19.0.0-DgmjrMods,)</TelegramBotVersion>
+    </PropertyGroup>
+    <ItemGroup Label="Telegram">
+        <PackageReference Update="Telegram.Bot" Version="$(TelegramBotVersion)" />
+        <PackageReference Update="WTelegramClient" Version="[3.4.2,)" />
+    </ItemGroup>
+</Project>

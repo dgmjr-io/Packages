@@ -1,0 +1,17 @@
+<!--
+ * Testing.EfCore.pkgs
+ * 
+ *   Created: 2022-11-23-07:06:33
+ *   Modified: 2022-11-23-02:48:19
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+    <ItemGroup Label="Testing">
+        <PackageReference Update="EntityFrameworkCore.Testing.NSubstitute" Version="[4.0.2,)" />
+    </ItemGroup>
+</Project>

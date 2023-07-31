@@ -1,0 +1,19 @@
+<!--
+ * Powershell.pkgs
+ * 
+ *   Created: 2023-01-24-04:57:32
+ *   Modified: 2023-01-24-04:57:33
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+    <PackageReference Update="PowerShellStandard.Library" Version="5.1.0-preview-06" />
+    <PackageReference Update="Microsoft.PowerShell.SDK" Version="$(PowerShellSDKVersion)" />
+    <PackageReference Update="System.Management.Automation" Version="$(SystemManagementAutomationVersion)" />
+  </ItemGroup>
+</Project>

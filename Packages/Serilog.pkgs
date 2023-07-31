@@ -1,0 +1,21 @@
+<!--
+ * Serilog.pkgs
+ * 
+ *   Created: 2022-12-02-02:09:39
+ *   Modified: 2022-12-02-02:09:39
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+    <PackageReference Update="Serilog.Extensions.Logging" Version="[3.1.0,)" />
+    <PackageReference Update="Serilog.Sinks.Console" Version="[4.1.0,)" />
+    <PackageReference Update="Serilog.Sinks.File" Version="[5.0.0,)" />
+    <PackageReference Update="Serilog.Sinks.MsSqlServer" Version="[6.0.0,)" />
+    <PackageReference Update="Serilog.Sinks.ApplicationInsights" Version="[4.0.0,)" />
+  </ItemGroup>
+</Project>

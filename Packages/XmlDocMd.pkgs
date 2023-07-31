@@ -1,0 +1,17 @@
+<!--
+ * XmlDocMd.pkgs
+ * 
+ *   Created: 2022-11-23-07:06:33
+ *   Modified: 2022-11-23-02:48:39
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+    <PackageReference Update="XmlDocMarkdown.Core" Version="[2.8.0,)" />
+  </ItemGroup>
+</Project>

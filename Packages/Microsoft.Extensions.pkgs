@@ -1,0 +1,47 @@
+<!--
+ * Microsoft.Extensions.pkgs
+ * 
+ *   Created: 2022-11-23-07:06:33
+ *   Modified: 2022-11-23-02:47:01
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+    <ItemGroup Label="Microsoft.Extensions">
+        <PackageReference Update="Microsoft.Extensions.Caching.Memory" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.Abstractions" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="[5.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.Binder" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.CommandLine" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.FileExtensions" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.Ini" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.Json" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.KeyPerFile" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.UserSecrets" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.Xml" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.DependencyInjection" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.DependencyModel" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.DependencyModel" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.FileSystemGlobbing.Abstractions" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.FileSystemGlobbing" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Hosting.Abstractions" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Hosting" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Http" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Logging.ApplicationInsights" Version="2.21.0" Requres="NETSTANDARD2_0_OR_GREATER" />
+        <PackageReference Update="Microsoft.Extensions.Logging.Abstractions" Version="$(MicrosoftExtensionsLoggingVersion)" />
+        <PackageReference Update="Microsoft.Extensions.Logging.Console" Version="$(MicrosoftExtensionsLoggingVersion)" />
+        <PackageReference Update="Microsoft.Extensions.Logging.Configuration" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Logging" Version="$(MicrosoftExtensionsLoggingVersion)" />
+        <PackageReference Update="Microsoft.Extensions.Options.ConfigurationExtensions" Version="[7.0.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Options" Version="[7.0.1,)" />
+        <PackageReference Update="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="[7.0.1,)" />
+        <PackageReference Update="Microsoft.Extensions.Diagnostics.HealthChecks" Version="[7.0.1,)" />
+    </ItemGroup>
+</Project>

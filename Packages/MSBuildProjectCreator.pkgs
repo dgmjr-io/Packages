@@ -1,0 +1,18 @@
+<!--
+ * MSBuildProjectCreator.pkgs
+ * 
+ *   Created: 2022-11-23-07:06:33
+ *   Modified: 2022-11-23-02:47:08
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+    <PackageReference Update="FlubuCore" Version="5.1.1" />
+    <PackageReference Update="MSBuild.ProjectCreation" Version="8.3.0" />
+  </ItemGroup>
+</Project>

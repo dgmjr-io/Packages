@@ -1,0 +1,58 @@
+<!--
+ * Microsoft.AspNetCore.pkgs
+ * 
+ *   Created: 2022-10-21-11:40:42
+ *   Modified: 2022-11-19-04:06:14
+ * 
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *   
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+    <FrameworkReference Remove="Microsoft.AspNetCore.App" Condition="$(TargetFramework.StartsWith('netstandard'))" />
+  </ItemGroup>
+  <ItemGroup Label="Microsoft.AspNetCore.App.Ref">
+    <PackageReference Update="Microsoft.AspNetCore.App.Ref" Version="$(AspNetCoreVersion)" />
+    <PackageReference Remove="Microsoft.AspNetCore.App.Ref" Condition="$(TargetFramework.StartsWith('netstandard'))" />
+    <!-- <PackageReference Update="Microsoft.AspNetCore.App.Ref" Version="[6.0.11,)" Condition="'$(TargetFramework)' == 'net6.0'" /> -->
+    <!-- <PackageReference Update="Microsoft.AspNetCore.App.Ref" Version="[3.1.10)" Condition="'$(TargetFramework)' == 'netcoreapp3.1'" /> -->
+  </ItemGroup>
+  <ItemGroup Label="Microsoft.AspNetCore.App">
+    <PackageReference Update="Microsoft.AspNetCore.App" Version="[2.2.8,)" />
+    <PackageReference Remove="Microsoft.AspNetCore.App" Condition="$(TargetFramework.StartsWith('netstandard'))"  />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="Microsoft.AspNetCore.Authorization" Version="$(AspNetCoreVersion)" />
+    <PackageReference Update="Microsoft.AspNetCore.Authentication" Version="[2.2.0,)" />
+    <PackageReference Update="Microsoft.AspNetCore.Http" Version="[2.2.2,)" />
+    <PackageReference Update="Microsoft.AspNetCore.Http.Extensions" Version="[2.2.0,)" />
+    <PackageReference Update="Microsoft.AspNetCore.Http.Abstractions" Version="[2.2.0,)" />
+    <PackageReference Update="Microsoft.AspNetCore.Mvc" Version="[2.2.0,)" />
+    <PackageReference Update="Microsoft.AspNetCore.Mvc.Core" Version="[2.2.5,)" />
+    <PackageReference Update="Microsoft.AspNet.WebApi.Client" Version="[5.2.9,)" />
+    <PackageReference Update="Microsoft.Net.Http.Headers" Version="[2.2.8,)" />
+    <PackageReference Update="Microsoft.AspNetCore.OpenApi" Version="$(AspNetCoreVersion)" />
+    <PackageReference Update="Microsoft.AspNetCore.JsonPatch" Version="$(AspNetCoreVersion)" />
+    <PackageReference Update="Microsoft.OpenApi" Version="[1.4.4,)" />
+    <PackageReference Update="Microsoft.AspNetCore.Authentication.OAuth" Version="[2.2.0,)"  />
+    <PackageReference Update="Microsoft.AspNetCore.Identity.UI" Version="$(EfCoreVersion)" />
+    <PackageReference Update="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(JsonPatchVersion)"  />
+    <PackageReference Update="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(AspNetCoreIdentityVersion)" />
+    <PackageReference Update="Microsoft.Extensions.Identity.Stores" Version="$(AspNetCoreIdentityVersion)" />
+    <PackageReference Update="Microsoft.AspNetCore.Authentication.JwtBearer" Version="$(JwtBearerVersion)" />
+  </ItemGroup>
+  <ItemGroup Label="AspNetCore.Hashids">
+    <PackageReference Update="AspNetCore.Hashids" Version="[2.0.0-DgmjrMods,)" />
+    <!-- <PackageReference Update="AspNetCore.Hashids" Version="[1.3.0,)" Condition="'$(TargetFramework)' == 'netcoreapp3.1'" /> -->
+    <!-- <PackageReference Remove="AspNetCore.Hashids" Condition="$(TargetFramework.CompareTo('net6')) <= 0 And '$(TargetFramework)' != 'netcoreapp3.1'" /> -->
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="MessagePack.AspNetCoreMvcFormatter" Version="[2.4.59,)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="System.Net.Http.Json" Version="[7.0.0,)" />
+  </ItemGroup>
+</Project>

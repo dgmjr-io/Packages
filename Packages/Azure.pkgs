@@ -1,0 +1,31 @@
+<!--
+ * Azure.pkgs
+ *
+ *   Created: 2022-11-23-07:06:33
+ *   Modified: 2022-11-23-02:46:44
+ *
+ *   Author: David G. Mooore, Jr. <david@dgmjr.io>
+ *
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+    <ItemGroup Label="Azure">
+        <PackageReference Update="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="[1.2.2,)" Source="nuget" />
+        <PackageReference Update="Azure.Identity" Version="[1.8.2,)" />
+        <PackageReference Update="Azure.Core" Version="[1.30.0,)" />
+        <PackageReference Update="Azure.Messaging.EventGrid" Version="[4.11.0,)" />
+        <PackageReference Update="Azure.Communication.Common" Version="1.2.1" />
+        <PackageReference Update="Azure.Communication.Email" Version="1.0.0" />
+        <PackageReference Update="Azure.Communication.Sms" Version="1.0.1" />
+        <PackageReference Update="Azure.Storage.Blobs" Version="12.16.0" />
+        <!-- <PackageReference Update="Microsoft.Azure.AppConfiguration.AspNetCore" Version="[5.3.0-preview,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="[5.3.0-preview,)" /> -->
+        <PackageReference Update="Microsoft.Azure.AppConfiguration.AspNetCore" Version="[5.2.0,)" />
+        <PackageReference Update="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="[5.2.0,)" />
+        <PackageReference Update="Azure.AI.TextAnalytics" Version="5.2.0-beta.3" />
+        <PackageReference Update="Azure.AI.OpenAI" Version="1.0.0-beta.5" />
+        <PackageReference Update="Microsoft.Azure.Storage.Blob" Version="11.2.3" />
+    </ItemGroup>
+</Project>
