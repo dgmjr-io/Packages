@@ -18,6 +18,7 @@
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">[5.0.17,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.13,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.4,)</AspNetCoreIdentityVersion>
+    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">8.0.0-preview.7.23375,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</AspNetCoreIdentityVersion>
   </PropertyGroup>
 
@@ -28,7 +29,7 @@
     <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">[5.0.17,)</AspNetCoreVersion>
     <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.13,)</AspNetCoreVersion>
     <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.4,)</AspNetCoreVersion>
-    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0-preview.5.23302.2,)</AspNetCoreVersion>
+    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0-preview.7.23375,)</AspNetCoreVersion>
     <AspNetCoreVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</AspNetCoreVersion>
   </PropertyGroup>
   <PropertyGroup>
@@ -36,6 +37,7 @@
     <JwtBearerVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">[5.0.17,)</JwtBearerVersion>
     <JwtBearerVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.13,)</JwtBearerVersion>
     <JwtBearerVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.4,)</JwtBearerVersion>
+    <JwtBearerVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0-preview.7.23375,)</JwtBearerVersion>
     <JwtBearerVersion Condition="!$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">Unsupported</JwtBearerVersion>
   </PropertyGroup>
 </Project>

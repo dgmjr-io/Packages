@@ -25,6 +25,7 @@
   "Dgmjr.AspNetCore.Swagger": "0.0.1-Local",
   "Dgmjr.Attributes": "0.0.1-Local",
   "Dgmjr.CodeGeneration.Abstractions": "0.0.1-Local",
+  "Dgmjr.CodeGeneration.CompileTimeComputation": "0.0.0-beta.0.22",
   "Dgmjr.CodeGeneration.Constants": "0.0.1-Local",
   "Dgmjr.CodeGeneration.Constants-Scriban.Bundled": "0.0.1-Local",
   "Dgmjr.CodeGeneration.Extensions": "0.0.1-Local",

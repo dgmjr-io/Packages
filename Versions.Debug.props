@@ -32,6 +32,7 @@
     <PackageReference Update="Dgmjr.AspNetCore.Swagger" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Swagger'" />
     <PackageReference Update="Dgmjr.Attributes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Attributes'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Abstractions'" />
+    <PackageReference Update="Dgmjr.CodeGeneration.CompileTimeComputation" Version="[0.0.0-beta.0.22, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.CompileTimeComputation'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Constants'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Constants-Scriban.Bundled" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Constants-Scriban.Bundled'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Extensions'" />
