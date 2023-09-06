@@ -14,16 +14,17 @@
     <ItemGroup Label="Roslyn">
         <PackageReference Update="Microsoft.CodeAnalysis.NetAnalyzers" Version="[8.0.0-preview1.23165.1,)" IncludeAssets="anayzers; build; native" PrivateAssets="All" />
         <PackageReference Update="Microsoft.CodeAnalysis.Common" Version="$(MicrosoftCodeAnalysisVersion)" PrivateAssets="All" />
-        <PackageReference Update="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="[4.6.0,)" PrivateAssets="All" />
-        <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="[4.6.0,)" PrivteAssets="All" />
-        <PackageReference Update="Microsoft.CodeAnalysis.Workspaces.Common" Version="[4.6.0,)" PrivateAssets="All" />
-        <PackageReference Update="Microsoft.CodeAnalysis" Version="[4.6.0,)" PrivateAssets="All" />
+        <PackageReference Update="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="[4.7.0,)" PrivateAssets="All" />
+        <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="[4.7.0,)" PrivteAssets="All" />
+        <PackageReference Update="Microsoft.CodeAnalysis.Workspaces.Common" Version="[4.7.0,)" PrivateAssets="All" />
+        <PackageReference Update="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="[4.7.0,)" PrivateAssets="All" />
+        <PackageReference Update="Microsoft.CodeAnalysis" Version="[4.7.0,)" PrivateAssets="All" />
         <PackageReference Update="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" Version="[4.1.0,)" PrivateAssets="All" />
         <PackageReference Update="Microsoft.CSharp" Version="[4.7.0,)" PrivateAssets="All" />
-        <PackageReference Update="Microsoft.Net.Compilers.Toolset" Version="[4.6.0,)" PrivateAssets="All" />
+        <PackageReference Update="Microsoft.Net.Compilers.Toolset" Version="[4.7.0,)" PrivateAssets="All" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="[4.6.0,)" PrivateAssets="All" />
+        <PackageReference Update="Microsoft.CodeAnalysis.CSharp" Version="[4.7.0,)" PrivateAssets="All" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Update="Roslynator.CommandLine" Version="[0.5.0,)" PrivateAssets="All" />

@@ -93,7 +93,7 @@
     <PackageReference Update="Dgmjr.MSBuild.Utils.GetAllProperties" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.MSBuild.Utils.GetAllProperties'" />
     <PackageReference Update="Dgmjr.Payloads" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Payloads'" />
     <PackageReference Update="Dgmjr.PowerShell.Classes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.PowerShell.Classes'" />
-    <PackageReference Update="Dgmjr.Primitives" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Primitives'" />
+    <PackageReference Update="Dgmjr.Primitives" Version="[0.0.1, )" Condition="'$(PackageId)' != 'Dgmjr.Primitives'" />
     <PackageReference Update="Dgmjr.RedisCacheAccessor.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.RedisCacheAccessor.Abstractions'" />
     <PackageReference Update="Dgmjr.RedisCacheAccessor.Core" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.RedisCacheAccessor.Core'" />
     <PackageReference Update="Dgmjr.RegexDtoGenerator" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.RegexDtoGenerator'" />
@@ -108,7 +108,7 @@
     <PackageReference Update="Dgmjr.Tuples" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Tuples'" />
     <PackageReference Update="Dgmjr.TypeScript" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.TypeScript'" />
     <PackageReference Update="Dgmjr.UnRefJsonYaml" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.UnRefJsonYaml'" />
-    <PackageReference Update="DgmjrSdk" Version="[0.0.18-preview.0.17, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
+    <PackageReference Update="DgmjrSdk" Version="[0.0.21, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
     <PackageReference Update="Directory.Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Directory.Build'" />
     <PackageReference Update="EFC.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'EFC.Usings'" />
     <PackageReference Update="EmbedProjectFile" Version="[0.0.1, )" Condition="'$(PackageId)' != 'EmbedProjectFile'" />
