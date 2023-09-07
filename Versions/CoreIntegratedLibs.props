@@ -1,11 +1,11 @@
 <!--
- * SystemIntegratedLibs.props
- * 
+ * CoreIntegratedLibs.props
+ *
  *   Created: 2023-05-08-12:08:58
  *   Modified: 2023-05-08-12:08:58
- * 
+ *
  *   Author: David G. Moore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
@@ -15,6 +15,6 @@
         <CoreIntegratedLibsVersion Condition="$(TargetFramework.CompareTo('net6')) >= 0">Unsupported</CoreIntegratedLibsVersion>
         <CoreIntegratedLibsVersion Condition="$(TargetFramework.CompareTo('net7')) >= 0">Unsupported</CoreIntegratedLibsVersion>
         <CoreIntegratedLibsVersion Condition="$(TargetFramework.CompareTo('net8')) >= 0">Unsupported</CoreIntegratedLibsVersion>
-        <CoreIntegratedLibsVersion Condition="$(TargetFramework.StartsWith('nststandard'))">4.3.0</CoreIntegratedLibsVersion>
+        <CoreIntegratedLibsVersion Condition="$(TargetFramework.StartsWith('netstandard'))">4.3.0</CoreIntegratedLibsVersion>
     </PropertyGroup>
 </Project>

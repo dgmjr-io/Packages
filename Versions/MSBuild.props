@@ -1,24 +1,23 @@
 <!--
  * MSBuild.props
- * 
+ *
  *   Created: 2023-01-28-06:42:47
  *   Modified: 2023-01-28-06:42:47
- * 
+ *
  *   Author: David G. Mooore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
 <Project>
   <PropertyGroup Label="MSBuild">
-    <TargetFramework>netstandard2.0</TargetFramework>
     <MSBuildPackageVersion>[14.3.0,)</MSBuildPackageVersion>
     <MSBuildPackageVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_5_OR_GREATER'))">[15.6.85,)</MSBuildPackageVersion>
     <MSBuildPackageVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[15.9.20,)</MSBuildPackageVersion>
     <MSBuildPackageVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[16.9.0,)</MSBuildPackageVersion>
     <MSBuildPackageVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[17.3.2,)</MSBuildPackageVersion>
-    <MSBuildPackageVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[17.4.0,)</MSBuildPackageVersion>
+    <MSBuildPackageVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[17.7.2,)</MSBuildPackageVersion>
     <MSBuildPackageVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_5_OR_GREATER'))">Unsupported</MSBuildPackageVersion>
 
     <MSBuildFrameworkVersion>[15.6.85,)</MSBuildFrameworkVersion>
@@ -29,7 +28,7 @@
     <MSBuildCoreUtilitiesCorePackageVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[15.6.85,)</MSBuildCoreUtilitiesCorePackageVersion>
     <MSBuildCoreUtilitiesCorePackageVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[17.4.0,)</MSBuildCoreUtilitiesCorePackageVersion>
     <MSBuildCoreUtilitiesCorePackageVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</MSBuildCoreUtilitiesCorePackageVersion>
-  
+
     <MSBuildTasksCoreVersion>[15.6.85,)</MSBuildTasksCoreVersion>
     <MSBuildTasksCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[15.6.85,)</MSBuildTasksCoreVersion>
     <MSBuildTasksCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[17.4.0,)</MSBuildTasksCoreVersion>

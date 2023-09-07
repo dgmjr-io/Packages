@@ -1,11 +1,11 @@
 <!--
  * RemoveUnsupportedPackageVersions.targets
- * 
+ *
  *   Created: 2023-02-25-01:41:22
  *   Modified: 2023-02-25-01:41:31
- * 
+ *
  *   Author: David G. Moore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
@@ -18,11 +18,11 @@
     </RestoreDependsOn>
   </PropertyGroup>
 
-  <Target Name="DisplayImportedPackageReferences" BeforeTargets="GetPackageContents">
+  <Target Name="DisplayImportedPackageReferences" BeforeTargets="GetPackageContents;Restore;Pack">
     <Message Text="Imported package references: @(PackageReference->'%(Identity) (%(Version))')" Importance="High" />
   </Target>
 
-  <Target Name="RemoveUnsupportedPackageVersions" BeforeTargets="GetPackageContents">
+  <Target Name="RemoveUnsupportedPackageVersions" BeforeTargets="GetPackageContents;Restore;Pack">
     <Message importance="High" Text="Removing unsupported package versions!" />
     <ItemGroup>
         <!-- Remove the unsupported package references -->
