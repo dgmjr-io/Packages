@@ -22,7 +22,7 @@
     <Message Text="Imported package references: @(PackageReference->'%(Identity) (%(Version))')" Importance="High" />
   </Target>
 
-  <Target Name="RemoveUnsupportedPackageVersions" BeforeTargets="GetPackageContents;Restore;Pack">
+  <Target Name="RemoveUnsupportedPackageVersions" BeforeTargets="GetPackageContents;">
     <Message importance="High" Text="Removing unsupported package versions!" />
     <ItemGroup>
         <!-- Remove the unsupported package references -->

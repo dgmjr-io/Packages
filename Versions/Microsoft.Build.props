@@ -33,5 +33,10 @@
     <MSBuildTasksCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[15.6.85,)</MSBuildTasksCoreVersion>
     <MSBuildTasksCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[17.4.0,)</MSBuildTasksCoreVersion>
     <MSBuildTasksCoreVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</MSBuildTasksCoreVersion>
+
+    <!-- <PackageVersion Include="Microsoft.Build" Version="$(MSBuildPackageVersion)" />
+    <PackageVersion Include="Microsoft.Build.Tasks.Core" Version="$(MSBuildTasksCoreVersion)" />
+    <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="$(MSBuildCoreUtilitiesCorePackageVersion)" />
+    <PackageVersion Include="Microsoft.Build.Framework" Version="$(MSBuildFrameworkVersion)" /> -->
   </PropertyGroup>
 </Project>
