@@ -108,7 +108,7 @@
     <PackageReference Update="Dgmjr.Tuples" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Tuples'" />
     <PackageReference Update="Dgmjr.TypeScript" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.TypeScript'" />
     <PackageReference Update="Dgmjr.UnRefJsonYaml" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.UnRefJsonYaml'" />
-    <PackageReference Update="DgmjrSdk" Version="[0.0.22, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
+    <PackageReference Update="DgmjrSdk" Version="[0.0.23, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
     <PackageReference Update="Directory.Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Directory.Build'" />
     <PackageReference Update="EFC.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'EFC.Usings'" />
     <PackageReference Update="EmbedProjectFile" Version="[0.0.1, )" Condition="'$(PackageId)' != 'EmbedProjectFile'" />
