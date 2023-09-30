@@ -20,7 +20,7 @@
     <PackageReference Update="CsprojPackager" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CsprojPackager'" />
     <PackageReference Update="Csv2Sql" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Csv2Sql'" />
     <PackageReference Update="DBuild.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'DBuild.Extensions'" />
-    <PackageReference Update="Dgmjr.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Abstractions'" />
+    <PackageReference Update="Dgmjr.Abstractions" Version="[0.0.1, )" Condition="'$(PackageId)' != 'Dgmjr.Abstractions'" />
     <PackageReference Update="Dgmjr.AspNetCore.Authentication" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Authentication'" />
     <PackageReference Update="Dgmjr.AspNetCore.Authorization" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Authorization'" />
     <PackageReference Update="Dgmjr.AspNetCore.Controllers" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Controllers'" />
@@ -52,7 +52,7 @@
     <PackageReference Update="Dgmjr.CodeGeneration.MemberDeclarationExtensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.MemberDeclarationExtensions'" />
     <PackageReference Update="Dgmjr.CodeGeneration.PropertySymbolExtensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.PropertySymbolExtensions'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Testing" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Testing'" />
-    <PackageReference Update="Dgmjr.ComponentModel" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.ComponentModel'" />
+    <PackageReference Update="Dgmjr.ComponentModel" Version="[0.0.1, )" Condition="'$(PackageId)' != 'Dgmjr.ComponentModel'" />
     <PackageReference Update="Dgmjr.Configuration" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Configuration'" />
     <PackageReference Update="Dgmjr.EntityFrameworkCore" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.EntityFrameworkCore'" />
     <PackageReference Update="Dgmjr.EntityFrameworkCore.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.EntityFrameworkCore.Abstractions'" />
@@ -108,7 +108,7 @@
     <PackageReference Update="Dgmjr.Tuples" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Tuples'" />
     <PackageReference Update="Dgmjr.TypeScript" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.TypeScript'" />
     <PackageReference Update="Dgmjr.UnRefJsonYaml" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.UnRefJsonYaml'" />
-    <PackageReference Update="DgmjrSdk" Version="[0.0.21, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
+    <PackageReference Update="DgmjrSdk" Version="[0.0.22, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
     <PackageReference Update="Directory.Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Directory.Build'" />
     <PackageReference Update="EFC.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'EFC.Usings'" />
     <PackageReference Update="EmbedProjectFile" Version="[0.0.1, )" Condition="'$(PackageId)' != 'EmbedProjectFile'" />
