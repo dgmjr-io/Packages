@@ -182,7 +182,7 @@
     <PackageReference Update="System.Net.Mime.MediaTypeNames.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames.Usings'" />
     <PackageReference Update="System.Reflection.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Reflection.Usings'" />
     <PackageReference Update="System.Security.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Security.Usings'" />
-    <PackageReference Update="System.Text.Json.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Text.Json.Usings'" />
+    <PackageReference Update="System.Text.Json.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'System.Text.Json.Usings'" />
     <PackageReference Update="System.Text.RegularExpressions.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Text.RegularExpressions.Usings'" />
     <PackageReference Update="System.Text.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Text.Usings'" />
     <PackageReference Update="System.Threading.Tasks.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Threading.Tasks.Usings'" />
