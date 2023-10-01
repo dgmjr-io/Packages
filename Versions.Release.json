@@ -175,7 +175,7 @@
   "System.Net.Mime.MediaTypeNames.Usings": "0.0.1-Local",
   "System.Reflection.Usings": "0.0.1-Local",
   "System.Security.Usings": "0.0.1-Local",
-  "System.Text.Json.Usings": "0.0.1",
+  "System.Text.Json.Usings": "0.0.1-Local",
   "System.Text.RegularExpressions.Usings": "0.0.1-Local",
   "System.Text.Usings": "0.0.1-Local",
   "System.Threading.Tasks.Usings": "0.0.1-Local",
