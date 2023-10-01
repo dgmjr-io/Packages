@@ -1,0 +1,26 @@
+<!--
+ * Packages.csproj
+ *
+ *   Created: 2023-10-01-02:39:53
+ *   Modified: 2023-10-01-02:39:53
+ *
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *
+ *   Copyright © 2022 - 2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.Build.NoTargets">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="./**/Packages/*.pkgs" PackagePath="Build/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Content Include="./**/Versions/*.props" PackagePath="Build/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Content Include="./Versions.Local.props" PackagePath="Build/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Content Include="./Versions.Local.json" PackagePath="Build/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Content Include="./Versions.Release.props" PackagePath="Build/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Content Include="./Versions.Release.json" PackagePath="Build/%(RecursiveDir)%(Filename)%(Extension)" />
+    <Content Include="./Packages.pkgs" PackagePath="Build/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>
