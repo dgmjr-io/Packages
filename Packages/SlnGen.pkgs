@@ -1,17 +1,17 @@
 <!--
  * SlnGen.pkgs
- * 
+ *
  *   Created: 2022-11-23-07:06:33
  *   Modified: 2022-11-23-02:47:53
- * 
+ *
  *   Author: David G. Mooore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
 <Project>
  <ItemGroup>
-   <GlobalPackageReference Include="Microsoft.VisualStudio.SlnGen" Version="[8.5.17,)" />
+   <GlobalPackageReference Include="Microsoft.VisualStudio.SlnGen" Version="[10.4.0,)" />
  </ItemGroup>
 </Project>
