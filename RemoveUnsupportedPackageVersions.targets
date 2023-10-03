@@ -26,7 +26,7 @@
     <Message importance="High" Text="Removing unsupported package versions!" />
     <ItemGroup>
         <!-- Remove the unsupported package references -->
-      <UnsupportedPackageReference Include="@(PackageReference->WithMetadataValue('Version', 'Unsupported'))"  />
+      <UnsupportedPackageReference Include="@(PackageReference->WithMetadataValue('Version', 'unsupported'))"  />
       <PackageReferenceWithNoVersion Include="@(PackageReference->WithMetadataValue('Version', ''))"/>
     </ItemGroup>
     <Warning Text="Packages with unsupported versions being removed: @(UnsupportedPackageReference)" Condition="@(UnsupportedPackageReference->Count()) &gt; 0"/>
