@@ -1,11 +1,11 @@
 <!--
  * AspNetCoreIdentity.props
- * 
+ *
  *   Created: 2023-01-28-07:27:42
  *   Modified: 2023-01-28-07:27:42
- * 
+ *
  *   Author: David G. Mooore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
@@ -18,7 +18,7 @@
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">[5.0.17,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.13,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.4,)</AspNetCoreIdentityVersion>
-    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">8.0.0-preview.7.23375,)</AspNetCoreIdentityVersion>
+    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0-preview.7.23375,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</AspNetCoreIdentityVersion>
   </PropertyGroup>
 
