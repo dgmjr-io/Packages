@@ -1,19 +1,19 @@
 <!--
  * Microsoft.Identity.pkgs
- * 
+ *
  *   Created: 2022-11-26-10:37:09
  *   Modified: 2022-11-26-10:37:09
- * 
+ *
  *   Author: David G. Mooore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
 <Project>
   <ItemGroup>
-    <PackageReference Update="Microsoft.Extensions.Identity.Core" Version="[7.0.5,)" />
-    <PackageReference Update="Microsoft.Extensions.Identity.Stores" Version="[7.0.5,)" />
-    <PackageReference Update="Microsoft.IdentityModel.JsonWebTokens" Version="[6.31.0,)" />
+    <PackageReference Update="Microsoft.Extensions.Identity.Core" Version="[7.0.11,)" />
+    <PackageReference Update="Microsoft.Extensions.Identity.Stores" Version="[7.0.11,)" />
+    <PackageReference Update="Microsoft.IdentityModel.JsonWebTokens" Version="[7.0.2,)" />
   </ItemGroup>
 </Project>
