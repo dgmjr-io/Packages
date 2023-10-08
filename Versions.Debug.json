@@ -77,6 +77,7 @@
   "EFC.Usings": "0.0.1-Local",
   "EmbedProjectFile": "0.0.1",
   "EnsureReadmeSdk": "0.0.1-Local",
+  "EnumSerializer.Generator": "1.0.0",
   "ExitCodes": "0.0.1-Local",
   "ffmpeg": "0.0.1-Local",
   "FluentValidation.Usings": "0.0.1",

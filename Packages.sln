@@ -1,65 +1,34 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B283EBC2-E01F-412D-9339-FD56EF114549}" 
+# 
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B283EBC2-E01F-412D-9339-FD56EF114549}"
 	ProjectSection(SolutionItems) = preProject
-		Versions.props = Versions.props
-		Versions.Local.json = Versions.Local.json
 		Versions.Local.props = Versions.Local.props
-		Packages.pkgs = Packages.pkgs
-		Packages\AnyOf.pkgs = Packages\AnyOf.pkgs
-		Packages\APIVersioning.pkgs = Packages\APIVersioning.pkgs
-		Packages\AutoMapper.pkgs = Packages\AutoMapper.pkgs
-		Packages\Azure.pkgs = Packages\Azure.pkgs
-		Packages\AzureFunctions.pkgs = Packages\AzureFunctions.pkgs
-		Packages\DDD.pkgs = Packages\DDD.pkgs
-		Packages\GlobalBuild.pkgs = Packages\GlobalBuild.pkgs
-		Packages\Images.pkgs = Packages\Images.pkgs
-		Packages\McMaster.CommandLineUtils.pkgs = Packages\McMaster.CommandLineUtils.pkgs
-		Packages\MediatR.pkgs = Packages\MediatR.pkgs
-		Packages\Microsoft.AspNetCore.pkgs = Packages\Microsoft.AspNetCore.pkgs
-		Packages\Microsoft.EntityFrameworkCore.pkgs = Packages\Microsoft.EntityFrameworkCore.pkgs
-		Packages\Microsoft.Extensions.pkgs = Packages\Microsoft.Extensions.pkgs
-		Packages\Microsoft.Identity.pkgs = Packages\Microsoft.Identity.pkgs
-		Packages\Microsoft.VisualStudio.Shell.Interop.pkgs = Packages\Microsoft.VisualStudio.Shell.Interop.pkgs
-		Packages\Miscellany.pkgs = Packages\Miscellany.pkgs
-		Packages\MSBuild.pkgs = Packages\MSBuild.pkgs
-		Packages\MSBuildProjectCreator.pkgs = Packages\MSBuildProjectCreator.pkgs
-		Packages\MSBuildSdks.pkgs = Packages\MSBuildSdks.pkgs
-		Packages\Newtonsoft.Json.pkgs = Packages\Newtonsoft.Json.pkgs
-		Packages\NuGet.pkgs = Packages\NuGet.pkgs
-		Packages\Powershell.pkgs = Packages\Powershell.pkgs
-		Packages\Roslyn.pkgs = Packages\Roslyn.pkgs
-		Packages\Serilog.pkgs = Packages\Serilog.pkgs
-		Packages\SlnGen.pkgs = Packages\SlnGen.pkgs
-		Packages\Swashbuckle.pkgs = Packages\Swashbuckle.pkgs
-		Packages\System.pkgs = Packages\System.pkgs
-		Packages\Telegram.pkgs = Packages\Telegram.pkgs
-		Packages\Testing.EfCore.pkgs = Packages\Testing.EfCore.pkgs
-		Packages\Testing.pkgs = Packages\Testing.pkgs
-		Packages\ThisAssembly.pkgs = Packages\ThisAssembly.pkgs
-		Packages\Validation.pkgs = Packages\Validation.pkgs
-		Packages\XmlDocMd.pkgs = Packages\XmlDocMd.pkgs
-		Versions\AspNetCoreIdentity.props = Versions\AspNetCoreIdentity.props
-		Versions\AutoMapper.props = Versions\AutoMapper.props
-		Versions\CoreIntegratedLibs.props = Versions\CoreIntegratedLibs.props
-		Versions\EFCore.props = Versions\EFCore.props
-		Versions\JsonPatch.props = Versions\JsonPatch.props
-		Versions\MediatR.props = Versions\MediatR.props
-		Versions\Microsoft.Build.props = Versions\Microsoft.Build.props
-		Versions\Microsoft.CodeAnalysis.props = Versions\Microsoft.CodeAnalysis.props
-		Versions\Microsoft.Extensions.Logging.props = Versions\Microsoft.Extensions.Logging.props
-		Versions\PowerShell.props = Versions\PowerShell.props
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Packages", "Packages.csproj", "{AA820C15-5EB3-49E7-9E93-4EC59177175D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Local|Any CPU = Local|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Testing|Any CPU = Testing|Any CPU
-		Staging|Any CPU = Staging|Any CPU
-		Production|Any CPU = Production|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Debug|x64.Build.0 = Debug|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Debug|x86.Build.0 = Debug|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Release|x64.ActiveCfg = Release|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Release|x64.Build.0 = Release|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Release|x86.ActiveCfg = Release|Any CPU
+		{AA820C15-5EB3-49E7-9E93-4EC59177175D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

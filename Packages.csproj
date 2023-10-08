@@ -13,6 +13,7 @@
 <Project Sdk="Microsoft.Build.NoTargets">
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
+    <Description>This is a package of all the version numbers of all the packages used in my projects.</Description>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="./**/Packages/*.pkgs" PackagePath="Build/%(RecursiveDir)%(Filename)%(Extension)" />

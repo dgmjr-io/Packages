@@ -1,22 +1,21 @@
 <!--
  * MediatR.props
- * 
+ *
  *   Created: 2023-03-23-08:22:12
  *   Modified: 2023-03-23-08:22:12
- * 
+ *
  *   Author: David G. Moore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
 <Project>
 	<PropertyGroup Label="MediatR (.NET Standard 1.1)">
-		<MediatRVersion>[11.1.1-JustinWritesCodeMods,)</MediatRVersion>
-		<MediatRDIVersion>[2.0.0,)</MediatRDIVersion>
-		<MediatRExtensionsFluentValidationAspNetCoreVersion />
+		<MediatRVersion>[12.1.1,)</MediatRVersion>
+		<MediatRExtensionsFluentValidationAspNetCoreVersion>4.0.0</MediatRExtensionsFluentValidationAspNetCoreVersion>
 	</PropertyGroup>
 	<PropertyGroup>
-		<MediatRContractsVersion>[1.0.1,)</MediatRContractsVersion>
-    </PropertyGroup>
+		<MediatRContractsVersion>[2.0.1,)</MediatRContractsVersion>
+  </PropertyGroup>
 </Project>

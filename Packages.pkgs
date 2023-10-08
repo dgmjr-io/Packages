@@ -21,12 +21,18 @@
 	<Import Project="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" Condition="'$(Configuration)' != ''" />
 	<Import Project="$(MSBuildThisFileDirectory)Packages/*.pkgs" />
 	<Import Project="$(MSBuildThisFileDirectory)RemoveUnsupportedPackageVersions.targets" />
-	<ItemGroup>
+  <ItemGroup>
+    <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('Directory.Build.props')" />
+    <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('Directory.Build.targets')" />
+    <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('global.json')" />
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" />
+  </ItemGroup>
+	<!-- <ItemGroup>
 		<SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.props" />
 		<SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).json" Condition="'$(Configuration)' != ''" />
 		<SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" Condition="'$(Configuration)' != ''" />
 		<SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Packages.pkgs" />
 		<SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Packages/*.*" />
 		<SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions/*.*" />
-	</ItemGroup>
+	</ItemGroup> -->
 </Project>

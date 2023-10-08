@@ -1,11 +1,11 @@
 <!--
  * Microsoft.Extensions.Logging.props
- * 
+ *
  *   Created: 2023-03-23-08:20:43
  *   Modified: 2023-03-23-08:20:43
- * 
+ *
  *   Author: David G. Moore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
@@ -13,6 +13,6 @@
 <Project>
   <PropertyGroup>
     <MicrosoftExtensionsLoggingVersion>1.1.2</MicrosoftExtensionsLoggingVersion>
-    <MicrosoftExtensionsLoggingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">7.0.0</MicrosoftExtensionsLoggingVersion>
+    <MicrosoftExtensionsLoggingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">8.0.0-rc</MicrosoftExtensionsLoggingVersion>
   </PropertyGroup>
 </Project>

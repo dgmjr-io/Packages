@@ -84,6 +84,7 @@
     <PackageReference Update="EFC.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'EFC.Usings'" />
     <PackageReference Update="EmbedProjectFile" Version="[0.0.1, )" Condition="'$(PackageId)' != 'EmbedProjectFile'" />
     <PackageReference Update="EnsureReadmeSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'EnsureReadmeSdk'" />
+    <PackageReference Update="EnumSerializer.Generator" Version="[1.0.0, )" Condition="'$(PackageId)' != 'EnumSerializer.Generator'" />
     <PackageReference Update="ExitCodes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'ExitCodes'" />
     <PackageReference Update="ffmpeg" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'ffmpeg'" />
     <PackageReference Update="FluentValidation.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'FluentValidation.Usings'" />

@@ -16,8 +16,8 @@
       <PackageReference Update="System.AppDomain" Version="[2.0.9,)" />
       <PackageReference Update="System.AppDomains" Version="1.1.2" Condition="$(DefinedConstants.Contains('NETSTANDARD2_0_OR_GREATER'))" />
       <PackageReference Remove="System.AppDomain.AspNetCore" Condition="!$(DefinedConstants.Contains('NETSTANDARD1_5_OR_GREATER'))" />
-      <PackageReference Update="System.CodeDom" Version="[7.0.0,)" />
-      <PackageReference Update="System.Collections.Immutable" Version="[7.0.0,)" />
+      <PackageReference Update="System.CodeDom" Version="[8.0.0-rc,)" />
+      <PackageReference Update="System.Collections.Immutable" Version="[8.0.0-rc,)" />
       <PackageReference Update="System.ComponentModel.Annotations" Version="[5.0.0,)" />
       <PackageReference Update="System.ComponentModel" Version="[4.3.0,)" />
       <PackageReference Update="System.Configuration.ConfigurationManager" Version="[6.0.0,)" />
