@@ -15,6 +15,7 @@
 		<IncludeInSolutionFile>false</IncludeInSolutionFile>
 		<!-- <CustomBeforeCentralPackageVersionsProps>$(MSBuildThisFileDirectory)Versions.props</CustomBeforeCentralPackageVersionsProps> -->
 		<!-- <CustomBeforeCentralPackageVersionsTargets>$(MSBuildThisFileDirectory)</CustomBeforeCentralPackageVersionsTargets> -->
+    <_DirectorBuildProps>$(MSBuild]::GetPathOfFileAbove('Directory.Build.props'))</_DirectorBuildProps>
 	</PropertyGroup>
 	<Import Project="$(MSBuildThisFileDirectory)Versions.props" />
 	<Import Project="$(MSBuildThisFileDirectory)Versions/*.*" />
@@ -22,10 +23,10 @@
 	<Import Project="$(MSBuildThisFileDirectory)Packages/*.pkgs" />
 	<Import Project="$(MSBuildThisFileDirectory)RemoveUnsupportedPackageVersions.targets" />
   <ItemGroup>
-    <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('Directory.Build.props')" />
-    <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('Directory.Build.targets')" />
-    <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('global.json')" />
-    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" />
+    <!-- <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('Directory.Build.props')" Link="Build/Directory.Build.props" />
+    <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('Directory.Build.targets')" Link="Build/Directory.Build.targets" />
+    <SlnGenSolutionItem Include="$(MSBuild]::GetPathOfFileAbove('global.json')" Link="Build/global.json" /> -->
+    <SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.$(Configuration).props" Link="Build/Versions.$(Configuration).props" />
   </ItemGroup>
 	<!-- <ItemGroup>
 		<SlnGenSolutionItem Include="$(MSBuildThisFileDirectory)Versions.props" />
