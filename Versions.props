@@ -124,20 +124,20 @@
     <_TargetFrameworkVersionWithoutV>$(TargetFrameworkVersion.Replace("v", ""))</_TargetFrameworkVersionWithoutV>
   </PropertyGroup>
   <Target Name="Display" BeforeTargets="Build">
-    <Message Text="PackageReference: @(PackageReference->'%(Identity) - %(Version)%0d%0a')" Importance="High" />
+    <Message Text="PackageReference: @(PackageReference->'%(Identity) - %(Version)%0d%0a')" />
   </Target>
   <Target Name="__WriteStuff" AfterTargets="Display">
-    <Message Importance="High" Text="TargetFramework: $(TargetFramework)" />
-    <Message Importance="High" Text="--- (inside Packages.props) --- " />
-    <Message Importance="High" Text="EfCoreVersion: $(EfCoreVersion)" />
-    <Message Importance="High" Text="TargetFramework: $(TargetFramework)" />
-    <Message Importance="High" Text="DefineConstants: $(DefineConstants)" />
-    <Message Importance="High"  Text="NETSTANDARD1_3_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD1_3_OR_GREATER')): [1.1.6,)" />
-    <Message Importance="High"  Text="NETSTANDARD2_0_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD2_0_OR_GREATER')): [2.2.0,)" />
-    <Message Importance="High"  Text="NETSTANDARD2_1_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD2_1_OR_GREATER')): [5.0.17,)" />
-    <Message Importance="High"  Text="NET6_0_OR_GREATER: $(DefineConstants).Contains('NET6_0_OR_GREATER')): [6.0.12,)" />
-    <Message Importance="High"  Text="NET7_0_OR_GREATER: $(DefineConstants).Contains('NET7_0_OR_GREATER')): [7.0.1,)" />
-    <Message Importance="High"  Text="NET8_0_OR_GREATER: $(DefineConstants).Contains('NET8_0_OR_GREATER')): [8.0.0,)" />
+    <Message Text="TargetFramework: $(TargetFramework)" />
+    <Message Text="--- (inside Packages.props) --- " />
+    <Message Text="EfCoreVersion: $(EfCoreVersion)" />
+    <Message Text="TargetFramework: $(TargetFramework)" />
+    <Message Text="DefineConstants: $(DefineConstants)" />
+    <Message  Text="NETSTANDARD1_3_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD1_3_OR_GREATER')): [1.1.6,)" />
+    <Message  Text="NETSTANDARD2_0_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD2_0_OR_GREATER')): [2.2.0,)" />
+    <Message  Text="NETSTANDARD2_1_OR_GREATER: $(DefineConstants).Contains('NETSTANDARD2_1_OR_GREATER')): [5.0.17,)" />
+    <Message  Text="NET6_0_OR_GREATER: $(DefineConstants).Contains('NET6_0_OR_GREATER')): [6.0.12,)" />
+    <Message  Text="NET7_0_OR_GREATER: $(DefineConstants).Contains('NET7_0_OR_GREATER')): [7.0.1,)" />
+    <Message  Text="NET8_0_OR_GREATER: $(DefineConstants).Contains('NET8_0_OR_GREATER')): [8.0.0,)" />
   </Target>
   <ItemGroup>
     <DefineConstants Include="$(DefineConstants)" />

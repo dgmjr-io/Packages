@@ -19,11 +19,11 @@
   </PropertyGroup>
 
   <Target Name="DisplayImportedPackageReferences" BeforeTargets="GetPackageContents;Restore;Pack">
-    <Message Text="Imported package references: @(PackageReference->'%(Identity) (%(Version))')" Importance="High" />
+    <Message Text="Imported package references: @(PackageReference->'%(Identity) (%(Version))')" />
   </Target>
 
   <Target Name="RemoveUnsupportedPackageVersions" BeforeTargets="GetPackageContents;">
-    <Message importance="High" Text="Removing unsupported package versions!" />
+    <Message Text="Removing unsupported package versions!" />
     <ItemGroup>
         <!-- Remove the unsupported package references -->
       <UnsupportedPackageReference Include="@(PackageReference->WithMetadataValue('Version', 'unsupported'))"  />
