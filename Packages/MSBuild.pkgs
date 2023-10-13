@@ -18,5 +18,7 @@
     <PackageReference Update="Microsoft.Build" PrivateAssets="None" Version="$(MSBuildPackageVersion)" />
 
     <PackageReference Update="Microsoft.Build.Tasks.Core" Version="$(MSBuildTasksCoreVersion)" PrivateAssets="None" />
+
+    <PackageReference Update="Microsoft.Build.Locator" Version="$(MSBuildLocatorVersion)" PrivateAssets="None" />
   </ItemGroup>
 </Project>

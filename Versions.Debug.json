@@ -70,6 +70,8 @@
   "Dgmjr.Security": "0.0.1-Local",
   "Dgmjr.Security.Constants": "0.0.1-Local",
   "Dgmjr.System.Extensions": "0.0.1-Local",
+  "Dgmjr.Testing.Logging": "0.0.0-beta.0",
+  "Dgmjr.Testing.Tests.Abstractions": "0.0.0-beta.0",
   "Dgmjr.Tuples": "0.0.1-Local",
   "Dgmjr.TypeScript": "0.0.1-Local",
   "DgmjrSdk": "0.0.18-beta.0.2",

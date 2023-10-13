@@ -77,6 +77,8 @@
     <PackageReference Update="Dgmjr.Security" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Security'" />
     <PackageReference Update="Dgmjr.Security.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Security.Constants'" />
     <PackageReference Update="Dgmjr.System.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.System.Extensions'" />
+    <PackageReference Update="Dgmjr.Testing.Logging" Version="[0.0.0-beta.0, )" Condition="'$(PackageId)' != 'Dgmjr.Testing.Logging'" />
+    <PackageReference Update="Dgmjr.Testing.Tests.Abstractions" Version="[0.0.0-beta.0, )" Condition="'$(PackageId)' != 'Dgmjr.Testing.Tests.Abstractions'" />
     <PackageReference Update="Dgmjr.Tuples" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Tuples'" />
     <PackageReference Update="Dgmjr.TypeScript" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.TypeScript'" />
     <PackageReference Update="DgmjrSdk" Version="[0.0.18-beta.0.2, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
