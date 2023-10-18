@@ -11,14 +11,14 @@
 -->
 <Project>
   <ItemGroup Label="MSBuild">
-    <PackageReference Update="Microsoft.Build.Framework" Version="$(MSBuildFrameworkVersion)" PrivateAssets="None" />
+    <PackageReference Update="Microsoft.Build.Framework" Version="$(MSBuildFrameworkVersion)" PrivateAssets="None" ExcludeAssets="Runtime" />
 
-    <PackageReference Update="Microsoft.Build.Utilities.Core" Version="$(MSBuildCoreUtilitiesCorePackageVersion)" PrivateAssets="None" />
+    <PackageReference Update="Microsoft.Build.Utilities.Core" Version="$(MSBuildCoreUtilitiesCorePackageVersion)" PrivateAssets="None" ExcludeAssets="Runtime"   />
 
-    <PackageReference Update="Microsoft.Build" PrivateAssets="None" Version="$(MSBuildPackageVersion)" />
+    <PackageReference Update="Microsoft.Build" PrivateAssets="None" Version="$(MSBuildPackageVersion)" ExcludeAssets="Runtime"   />
 
-    <PackageReference Update="Microsoft.Build.Tasks.Core" Version="$(MSBuildTasksCoreVersion)" PrivateAssets="None" />
+    <PackageReference Update="Microsoft.Build.Tasks.Core" Version="$(MSBuildTasksCoreVersion)" PrivateAssets="None" ExcludeAssets="Runtime"   />
 
-    <PackageReference Update="Microsoft.Build.Locator" Version="$(MSBuildLocatorVersion)" PrivateAssets="None" />
+    <PackageReference Update="Microsoft.Build.Locator" Version="$(MSBuildLocatorVersion)" PrivateAssets="None" ExcludeAssets="Runtime"  />
   </ItemGroup>
 </Project>

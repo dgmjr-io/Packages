@@ -1,17 +1,17 @@
 <!--
  * DDD.pkgs
- * 
+ *
  *   Created: 2023-01-06-03:13:37
  *   Modified: 2023-01-06-03:13:38
- * 
+ *
  *   Author: David G. Mooore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
 <Project>
   <ItemGroup>
-    <PackageReference Update="Luxoft.Framework.DomainDriven.DTOGenerator" Version="17.6.1" />
+    <PackageReference Update="Luxoft.Framework.DomainDriven.DTOGenerator" Version="[17.6.1,)" />
   </ItemGroup>
 </Project>

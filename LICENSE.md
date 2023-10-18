@@ -1,5 +1,5 @@
 ---
-date: 2023-07-13T05:44:46.048Z
+date: 2023-10-08T05:44:46.000Z
 description: Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, yadda, yadda, yadda...
 keywords:
   - IP
