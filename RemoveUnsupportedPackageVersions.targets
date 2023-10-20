@@ -22,18 +22,14 @@
     <Message Text="Imported package references: @(PackageReference->'%(Identity) (%(Version))')" />
   </Target>
 
-  <Target Name="RemoveUnsupportedPackageVersions" BeforeTargets="GetPackageContents;">
+  <Target Name="RemoveUnsupportedPackageVersions" BeforeTargets="GetPackageContents;Restore;CollectPackageReferences">
     <Message Text="Removing unsupported package versions!" />
     <ItemGroup>
-        <!-- Remove the unsupported package references -->
-      <UnsupportedPackageReference Include="@(PackageReference->WithMetadataValue('Version', 'unsupported'))"  />
-      <PackageReferenceWithNoVersion Include="@(PackageReference->WithMetadataValue('Version', ''))"/>
+      <!-- Create a list of unsupported package references -->
+      <PackageReferenceWithUnsupportedOrBlankVersion Include="@(PackageReference)" Condition="'%(PackageReference.Version)' == '' Or '%(PackageReference.Version)' == 'unsupported'" />
+      <!-- Remove the unsupported package references -->
+      <PackageReference Remove="%(Identity)" Condition="'%(PackageReference.Version)' == '' Or '%(PackageReference.Version)' == 'unsupported'" />
     </ItemGroup>
-    <Warning Text="Packages with unsupported versions being removed: @(UnsupportedPackageReference)" Condition="@(UnsupportedPackageReference->Count()) &gt; 0"/>
-    <Warning Text="Packages with no version number being removed: @(PackageReferenceWithNoVersion)" Condition="@(PackageReferenceWithNoVersion->Count()) &gt; 0"   />
-    <ItemGroup>
-      <PackageReference Remove="@(UnsupportedPackageReference)" />
-      <PackageReference Remove="@(PackageReferenceWithNoVersion)" />
-    </ItemGroup>
+    <Warning Text="Packages with unsupported or blank versions being removed: @(PackageReferenceWithUnsupportedOrBlankVersion)" Condition="@(PackageReferenceWithUnsupportedOrBlankVersion->Count()) > 0"/>
   </Target>
 </Project>
