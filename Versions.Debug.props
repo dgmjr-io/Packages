@@ -46,7 +46,7 @@
     <PackageReference Update="Dgmjr.EntityFrameworkCore.Models" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.EntityFrameworkCore.Models'" />
     <PackageReference Update="Dgmjr.Enumerations.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Enumerations.Abstractions'" />
     <PackageReference Update="Dgmjr.Enumerations.CodeGeneration.Samples" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Enumerations.CodeGeneration.Samples'" />
-    <PackageReference Update="Dgmjr.Enumerations.CodeGenerator" Version="[0.0.0-beta.0.11, )" Condition="'$(PackageId)' != 'Dgmjr.Enumerations.CodeGenerator'" />
+    <PackageReference Update="Dgmjr.Enumerations.CodeGenerator" Version="[0.0.0-beta.0.41, )" Condition="'$(PackageId)' != 'Dgmjr.Enumerations.CodeGenerator'" />
     <PackageReference Update="Dgmjr.Enumerations.Enumeration" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Enumerations.Enumeration'" />
     <PackageReference Update="Dgmjr.GetOrSetFromRedisCache" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.GetOrSetFromRedisCache'" />
     <PackageReference Update="Dgmjr.Global.Json" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Global.Json'" />
@@ -73,7 +73,7 @@
     <PackageReference Update="Dgmjr.Primitives" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Primitives'" />
     <PackageReference Update="Dgmjr.RedisCacheAccessor.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.RedisCacheAccessor.Abstractions'" />
     <PackageReference Update="Dgmjr.RedisCacheAccessor.Core" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.RedisCacheAccessor.Core'" />
-    <PackageReference Update="Dgmjr.RegexDtoGenerator" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.RegexDtoGenerator'" />
+    <PackageReference Update="Dgmjr.RegexDtoGenerator" Version="[0.0.0-beta.0.20, )" Condition="'$(PackageId)' != 'Dgmjr.RegexDtoGenerator'" />
     <PackageReference Update="Dgmjr.Security" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Security'" />
     <PackageReference Update="Dgmjr.Security.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Security.Constants'" />
     <PackageReference Update="Dgmjr.System.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.System.Extensions'" />
@@ -97,6 +97,7 @@
     <PackageReference Update="Humanizer.Patch" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Humanizer.Patch'" />
     <PackageReference Update="Identity.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Identity.Usings'" />
     <PackageReference Update="InsultProducer" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'InsultProducer'" />
+    <PackageReference Update="InterfaceGenerator" Version="[0.0.0-beta.0.32, )" Condition="'$(PackageId)' != 'InterfaceGenerator'" />
     <PackageReference Update="Invoke-Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Invoke-Build'" />
     <PackageReference Update="Invoke-DotNetCli" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Invoke-DotNetCli'" />
     <PackageReference Update="InvokeBuild" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'InvokeBuild'" />
