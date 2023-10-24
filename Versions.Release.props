@@ -133,7 +133,7 @@
     <PackageReference Update="libphonenumber-csharp" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'libphonenumber-csharp'" />
     <PackageReference Update="MediatR" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'MediatR'" />
     <PackageReference Update="MediatR.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'MediatR.Usings'" />
-    <PackageReference Update="MetapackageSdk" Version="[0.0.3, )" Condition="'$(PackageId)' != 'MetapackageSdk'" />
+    <PackageReference Update="MetapackageSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'MetapackageSdk'" />
     <PackageReference Update="Microsoft.AspNetCore.Identity.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Microsoft.AspNetCore.Identity.Abstractions'" />
     <PackageReference Update="Microsoft.AspNetCore.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Microsoft.AspNetCore.Usings'" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Microsoft.EntityFrameworkCore.Usings'" />

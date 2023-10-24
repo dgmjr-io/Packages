@@ -126,7 +126,7 @@
   "libphonenumber-csharp": "0.0.1-Local",
   "MediatR": "0.0.1-Local",
   "MediatR.Usings": "0.0.1-Local",
-  "MetapackageSdk": "0.0.3",
+  "MetapackageSdk": "0.0.1-Local",
   "Microsoft.AspNetCore.Identity.Abstractions": "0.0.1-Local",
   "Microsoft.AspNetCore.Usings": "0.0.1-Local",
   "Microsoft.EntityFrameworkCore.Usings": "0.0.1-Local",
