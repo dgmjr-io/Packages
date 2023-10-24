@@ -182,6 +182,7 @@
     <PackageReference Update="System.Net.Mime.MediaTypeNames" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames'" />
     <PackageReference Update="System.Net.Mime.MediaTypeNames.netstandard2.0Patch" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames.netstandard2.0Patch'" />
     <PackageReference Update="System.Net.Mime.MediaTypeNames.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames.Usings'" />
+    <PackageReference Update="System.Private.CoreLib.Polyfills" Version="[0.0.0-preview.0.71, )" Condition="'$(PackageId)' != 'System.Private.CoreLib.Polyfills'" />
     <PackageReference Update="System.Reflection.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Reflection.Usings'" />
     <PackageReference Update="System.Security.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Security.Usings'" />
     <PackageReference Update="System.Text.Json.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'System.Text.Json.Usings'" />
