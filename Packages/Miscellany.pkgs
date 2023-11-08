@@ -50,7 +50,7 @@
 	</ItemGroup>
 	<ItemGroup Label="libphonenumber-csharp">
 		<PackageReference Remove="libphonenumber-csharp" Condition="$(TargetFramework.Equals('netstandard1.0'))" />
-		<PackageReference Update="libphonenumber-csharp" Version="[8.13.16,)" />
+		<PackageReference Update="libphonenumber-csharp" Version="[8.13.24,)" />
 		<!-- <PackageReference Remove="libphonenumber-csharp.signed" Condition="@(PackageReference->AnyHaveMetadataValue('Identity', 'libphonenumber-csharp'))" />
     <PackageReference Update="libphonenumber-csharp" Version="[8.12.38,)" />
     <PackageReference Update="libphonenumber-csharp" Version="[8.13.2,)" Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))" /> -->

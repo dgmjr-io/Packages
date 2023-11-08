@@ -145,9 +145,6 @@
     <PackageReference Update="System.Compat" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Compat'" />
     <PackageReference Update="System.ComponentModel.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.ComponentModel.Usings'" />
     <PackageReference Update="System.Linq.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Linq.Usings'" />
-    <PackageReference Update="System.Net.Mime.MediaTypeNames" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames'" />
-    <PackageReference Update="System.Net.Mime.MediaTypeNames.netstandard2.0Patch" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames.netstandard2.0Patch'" />
-    <PackageReference Update="System.Net.Mime.MediaTypeNames.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames.Usings'" />
     <PackageReference Update="System.Private.CoreLib.Polyfills" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Private.CoreLib.Polyfills'" />
     <PackageReference Update="System.Reflection.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Reflection.Usings'" />
     <PackageReference Update="System.Security.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Security.Usings'" />

@@ -21,10 +21,10 @@
     <AutoMapperDIVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">Unsupported)</AutoMapperDIVersion>
     <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">[2.0.1,)</AutoMapperDIVersion>
     <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[8.1.1,)</AutoMapperDIVersion>
-    <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[12.0.0,)</AutoMapperDIVersion>
+    <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[12.0.1,)</AutoMapperDIVersion>
 
     <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.0.5,)</AutoMapperExpresionMappingVersion>
     <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[4.1.5,)</AutoMapperExpresionMappingVersion>
-    <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[6.0.3,)</AutoMapperExpresionMappingVersion>
+    <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[6.0.4,)</AutoMapperExpresionMappingVersion>
   </PropertyGroup>
 </Project>

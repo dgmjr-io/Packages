@@ -24,6 +24,7 @@
       <PackageReference Update="System.Collections.Concurrent" Version="[4.3.0,)" />
       <PackageReference Update="System.Diagnostics.Tools" Version="[4.3.0,)" />
       <PackageReference Update="System.Linq" Version="[4.3.0,)" />
+      <PackageReference Update="System.Memory" Version="[4.5.5,)" />
       <PackageReference Update="System.Net.Http" Version="[4.3.4,)" />
       <PackageReference Update="System.Net.Primitives" Version="[4.3.1,)" />
       <PackageReference Update="System.Net.WebHeaderCollection" Version="[4.3.0,)" />
