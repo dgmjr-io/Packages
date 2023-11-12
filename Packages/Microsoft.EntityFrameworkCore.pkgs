@@ -40,5 +40,7 @@
     <PackageReference Update="EntityFrameworkCore.Data.QueryBuilder.Abstractions" Version="6.0.9" />
     <PackageReference Update="EntityFrameworkCore.Data.Repository" Version="6.0.9" />
     <PackageReference Update="EntityFrameworkCore.Data.UnitOfWork" Version="6.0.9" />
+    <PackageReference Update="EntityFrameworkCore.Projectables" Version="3.0.4" />
+    <PackageReference Update="EntityFrameworkCore.Projectables.Abstractions" Version="3.0.4" />
   </ItemGroup>
 </Project>
