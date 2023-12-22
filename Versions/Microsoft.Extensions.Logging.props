@@ -13,6 +13,6 @@
 <Project>
   <PropertyGroup>
     <MicrosoftExtensionsLoggingVersion>1.1.2</MicrosoftExtensionsLoggingVersion>
-    <MicrosoftExtensionsLoggingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">8.0.0-rc</MicrosoftExtensionsLoggingVersion>
+    <MicrosoftExtensionsLoggingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">8.0.0</MicrosoftExtensionsLoggingVersion>
   </PropertyGroup>
 </Project>

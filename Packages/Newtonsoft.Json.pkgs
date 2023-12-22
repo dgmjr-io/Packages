@@ -1,19 +1,19 @@
 <!--
  * Newtonsoft.Json.pkgs
- * 
+ *
  *   Created: 2022-11-23-07:06:33
  *   Modified: 2022-11-23-02:47:28
- * 
+ *
  *   Author: David G. Mooore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
 <Project>
-    <ItemGroup Label="Newtonsoft.Json">
-        <PackageReference Update="Newtonsoft.Json" Version="[13.0.2,)" />
-        <PackageReference Update="Newtonsoft.Json.Schema" Version="[3.0.14,)" />
-        <PackageReference Update="Newtonsoft.Json.Bson" Version="[1.0.2,)" />
-    </ItemGroup>
+  <ItemGroup Label="Newtonsoft.Json">
+    <PackageReference Update="Newtonsoft.Json" Version="[13.0.2,)" />
+    <PackageReference Update="Newtonsoft.Json.Schema" Version="[3.0.14,)" />
+    <PackageReference Update="Newtonsoft.Json.Bson" Version="[1.0.2,)" />
+  </ItemGroup>
 </Project>

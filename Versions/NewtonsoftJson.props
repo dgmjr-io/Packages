@@ -1,0 +1,20 @@
+<!--
+ * JsonPatch.props
+ *
+ *   Created: 2023-01-28-07:40:49
+ *   Modified: 2023-01-28-07:40:49
+ *
+ *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *
+ *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <PropertyGroup Label="Json Patch">
+    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.25,)</NewtonsoftJsonVersion>
+    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.14,)</NewtonsoftJsonVersion>
+    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0,)</NewtonsoftJsonVersion>
+    <NewtonsoftJsonVersion Condition="!$(DefineConstants.Contains('NETSTANDARD'))">Unsupported</NewtonsoftJsonVersion>
+  </PropertyGroup>
+</Project>

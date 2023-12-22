@@ -19,8 +19,8 @@
     <PackageReference Update="Microsoft.EntityFrameworkCore.SqlServer" Version="$(EfCoreVersion)" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.Tools" Version="$(EfCoreVersion)" PrivateAssets="All" IncludeAssets="Runtime; Build; Native; ContentFiles; Analyzers; BuildTransitive" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.Design" Version="$(EfCoreVersion)" />
-    <PackageReference Update="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="$(EfCoreVersion)" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.InMemory" Version="$(EfCoreVersion)" />
+    <PackageReference Remove="Microsoft.EntityFrameworkCore.Sqlite"  Version="$(EfCoreVersion)" />
 
     <PackageReference Remove="Microsoft.EntityFrameworkCore" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
     <PackageReference Remove="Microsoft.EntityFrameworkCore.Abstractions" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
@@ -31,6 +31,7 @@
     <PackageReference Remove="Microsoft.EntityFrameworkCore.Design" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
     <PackageReference Remove="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
     <PackageReference Remove="Microsoft.EntityFrameworkCore.InMemory" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
+    <PackageReference Remove="Microsoft.EntityFrameworkCore.Sqlite" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
     <!-- <PackageReference Update="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="[1.1.6,)" /> -->
 
     <PackageReference Update="EntityFrameworkCore.Data.QueryBuilder.Abstractions" Version="6.0.9" />

@@ -16,28 +16,35 @@
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[2.2.0,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[3.1.32,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">[5.0.17,)</AspNetCoreIdentityVersion>
-    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.24,)</AspNetCoreIdentityVersion>
-    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.13,)</AspNetCoreIdentityVersion>
-    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0-rc.2,)</AspNetCoreIdentityVersion>
+    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.25,)</AspNetCoreIdentityVersion>
+    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.14,)</AspNetCoreIdentityVersion>
+    <AspNetCoreIdentityVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0,)</AspNetCoreIdentityVersion>
     <AspNetCoreIdentityVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</AspNetCoreIdentityVersion>
   </PropertyGroup>
 
   <PropertyGroup>
     <AspNetCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.1.6,)</AspNetCoreVersion>
     <AspNetCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[2.2.0,)</AspNetCoreVersion>
-    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[3.1.32,)</AspNetCoreVersion>
+    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[3.1.10,)</AspNetCoreVersion>
     <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">[5.0.17,)</AspNetCoreVersion>
-    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.24,)</AspNetCoreVersion>
-    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.13,)</AspNetCoreVersion>
-    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0-rc.2,)</AspNetCoreVersion>
+    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.25,)</AspNetCoreVersion>
+    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.14,)</AspNetCoreVersion>
+    <AspNetCoreVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0,)</AspNetCoreVersion>
     <AspNetCoreVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</AspNetCoreVersion>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <OpenApiVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">7.0.14</OpenApiVersion>
+    <OpenApiVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">8.0.0</OpenApiVersion>
+    <OpenApiVersion Condition="!$(DefineConstants.Contains('NET7_0_OR_GREATER'))">unsupported</OpenApiVersion>
+  </PropertyGroup>
+
   <PropertyGroup>
     <JwtBearerVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[2.2.0,)</JwtBearerVersion>
     <JwtBearerVersion Condition="$(DefineConstants.Contains('NET5_0_OR_GREATER'))">[5.0.17,)</JwtBearerVersion>
     <JwtBearerVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.13,)</JwtBearerVersion>
     <JwtBearerVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.4,)</JwtBearerVersion>
-    <JwtBearerVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0-preview.7.23375,)</JwtBearerVersion>
+    <JwtBearerVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0,)</JwtBearerVersion>
     <JwtBearerVersion Condition="!$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">Unsupported</JwtBearerVersion>
   </PropertyGroup>
 </Project>

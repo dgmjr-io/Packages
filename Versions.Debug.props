@@ -71,8 +71,8 @@
     <PackageReference Update="Dgmjr.Payloads" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Payloads'" />
     <PackageReference Update="Dgmjr.PowerShell.Classes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.PowerShell.Classes'" />
     <PackageReference Update="Dgmjr.Primitives" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Primitives'" />
-    <PackageReference Update="Dgmjr.RedisCacheAccessor.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.RedisCacheAccessor.Abstractions'" />
-    <PackageReference Update="Dgmjr.RedisCacheAccessor.Core" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.RedisCacheAccessor.Core'" />
+    <PackageReference Update="CacheAccessor.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CacheAccessor.Abstractions'" />
+    <PackageReference Update="CacheAccessor.Core" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CacheAccessor.Core'" />
     <PackageReference Update="Dgmjr.RegexDtoGenerator" Version="[0.0.0-beta.0.20, )" Condition="'$(PackageId)' != 'Dgmjr.RegexDtoGenerator'" />
     <PackageReference Update="Dgmjr.Security" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Security'" />
     <PackageReference Update="Dgmjr.Security.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Security.Constants'" />
@@ -145,6 +145,9 @@
     <PackageReference Update="System.Compat" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Compat'" />
     <PackageReference Update="System.ComponentModel.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.ComponentModel.Usings'" />
     <PackageReference Update="System.Linq.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Linq.Usings'" />
+    <PackageReference Update="System.Net.Mime.MediaTypeNames" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames'" />
+    <PackageReference Update="System.Net.Mime.MediaTypeNames.netstandard2.0Patch" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames.netstandard2.0Patch'" />
+    <PackageReference Update="System.Net.Mime.MediaTypeNames.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Net.Mime.MediaTypeNames.Usings'" />
     <PackageReference Update="System.Private.CoreLib.Polyfills" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Private.CoreLib.Polyfills'" />
     <PackageReference Update="System.Reflection.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Reflection.Usings'" />
     <PackageReference Update="System.Security.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'System.Security.Usings'" />

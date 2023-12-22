@@ -16,8 +16,8 @@
       <PackageReference Update="System.AppDomain" Version="[2.0.9,)" />
       <PackageReference Update="System.AppDomains" Version="1.1.2" Condition="$(DefinedConstants.Contains('NETSTANDARD2_0_OR_GREATER'))" />
       <PackageReference Remove="System.AppDomain.AspNetCore" Condition="!$(DefinedConstants.Contains('NETSTANDARD1_5_OR_GREATER'))" />
-      <PackageReference Update="System.CodeDom" Version="[8.0.0-rc,)" />
-      <PackageReference Update="System.Collections.Immutable" Version="[8.0.0-rc,)" />
+      <PackageReference Update="System.CodeDom" Version="[8.0.0,)" />
+      <PackageReference Update="System.Collections.Immutable" Version="[8.0.0,)" />
       <PackageReference Update="System.ComponentModel.Annotations" Version="[5.0.0,)" />
       <PackageReference Update="System.ComponentModel" Version="[4.3.0,)" />
       <PackageReference Update="System.Configuration.ConfigurationManager" Version="[6.0.0,)" />
@@ -36,8 +36,8 @@
       <PackageReference Update="System.Runtime.Numerics" Version="[4.3.0,)" />
       <PackageReference Update="System.Runtime.Serialization.Primitives" Version="[4.3.0,)" />
       <PackageReference Update="System.Security.Claims" Version="[4.3.0,)" />
-      <PackageReference Update="System.Security.Cryptography.Xml" Version="[8.0.0-rc,)" />
-      <PackageReference Update="System.Security.Cryptography.Pkcs" Version="[8.0.0-rc,)" />
+      <PackageReference Update="System.Security.Cryptography.Xml" Version="[8.0.0,)" />
+      <PackageReference Update="System.Security.Cryptography.Pkcs" Version="[8.0.0,)" />
       <PackageReference Update="System.Security.Cryptography.X509Certificates" Version="[4.3.2,)" />
       <PackageReference Update="System.Security.Cryptography.Algorithms" Version="[4.3.1,)" />
       <PackageReference Update="System.Security.Principal.Windows" Version="[5.0.0,)" />
@@ -51,7 +51,7 @@
       <PackageReference Update="NETStandard.Library" Version="[2.0.3,)" />
     </ItemGroup>
     <ItemGroup>
-      <PackageReference Update="System.Text.Json" Version="[8.0.0-rc,)" />
+      <PackageReference Update="System.Text.Json" Version="[8.0.0,)" />
       <PackageReference Remove="System.Text.Json" Condition="$(TargetFramework.StartsWith('netstandard1'))" />
     </ItemGroup>
 </Project>

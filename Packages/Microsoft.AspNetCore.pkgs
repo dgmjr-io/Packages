@@ -35,18 +35,19 @@
     <PackageReference Update="Microsoft.AspNetCore.Mvc.Core" Version="[2.1.38,)" />
     <PackageReference Update="Microsoft.AspNet.WebApi.Client" Version="[5.2.9,)" />
     <PackageReference Update="Microsoft.Net.Http.Headers" Version="[2.1.14,)" />
-    <PackageReference Update="Microsoft.AspNetCore.OpenApi" Version="$(AspNetCoreVersion)" />
-    <PackageReference Update="Microsoft.AspNetCore.JsonPatch" Version="$(AspNetCoreVersion)" />
+    <PackageReference Update="Microsoft.AspNetCore.OpenApi" Version="$(OpenApiVersion)" />
+    <PackageReference Update="Microsoft.AspNetCore.JsonPatch" Version="$(JsonPatchVersion)" />
     <PackageReference Update="Microsoft.OpenApi" Version="[1.6.9,)" />
     <PackageReference Update="Microsoft.AspNetCore.Authentication.OAuth" Version="[2.1.2,)"  />
     <PackageReference Update="Microsoft.AspNetCore.Identity.UI" Version="$(EfCoreVersion)" />
-    <PackageReference Update="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(JsonPatchVersion)"  />
+    <PackageReference Update="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(NewtonsoftJsonVersion)" Condition="'$(TargetFramework)' != 'netstandard2.0'" />
     <PackageReference Update="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="$(AspNetCoreIdentityVersion)" />
     <PackageReference Update="Microsoft.Extensions.Identity.Stores" Version="$(AspNetCoreIdentityVersion)" />
     <PackageReference Update="Microsoft.AspNetCore.Authentication.JwtBearer" Version="$(JwtBearerVersion)" />
+    <PackageReference Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Condition="$(TargetFramework.Contains('netstandard'))" />
   </ItemGroup>
   <ItemGroup Label="AspNetCore.Hashids">
-    <PackageReference Update="AspNetCore.Hashids" Version="[2.0.0-DgmjrMods,)" />
+    <PackageReference Update="AspNetCore.Hashids" Version="[2.0.0,)" />
     <!-- <PackageReference Update="AspNetCore.Hashids" Version="[1.3.0,)" Condition="'$(TargetFramework)' == 'netcoreapp3.1'" /> -->
     <!-- <PackageReference Remove="AspNetCore.Hashids" Condition="$(TargetFramework.CompareTo('net6')) <= 0 And '$(TargetFramework)' != 'netcoreapp3.1'" /> -->
   </ItemGroup>
