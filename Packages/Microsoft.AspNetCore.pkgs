@@ -53,9 +53,10 @@
     <PackageReference Update="Microsoft.Extensions.Identity.Stores" Version="$(AspNetCoreIdentityVersion)" />
     <PackageReference Update="Microsoft.Net.Http.Headers" Version="[2.1.14,)" />
     <PackageReference Update="Microsoft.OpenApi" Version="[1.6.9,)" />
+    <PackageReference Update="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="$(OpenIdConnectVersion)" />
   </ItemGroup>
   <ItemGroup>
-    <FrameworkReference Remove="Microsoft.AspNetCore.App" />
+    <FrameworkReference Remove="Microsoft.AspNetCore.App" Condition="$(TargetFramework.Contains('netstandard'))" />
   </ItemGroup>
   <ItemGroup Label="AspNetCore.Hashids">
     <PackageReference Update="AspNetCore.Hashids" Version="[2.0.0-DgmjrMods,)" />

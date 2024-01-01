@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <PackageReference Update="Microsoft.Identity.Web.MicrosoftGraph" Version="[2.16.0,)" />
+  </ItemGroup>
+</Project>

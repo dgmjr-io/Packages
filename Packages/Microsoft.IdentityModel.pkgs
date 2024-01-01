@@ -1,0 +1,9 @@
+<Project>
+  <ItemGroup>
+    <PackageReference Update="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="7.0.3" />
+    <PackageReference Update="Microsoft.IdentityModel.Protocols.WsFederation" Version="7.0.3" />
+    <PackageReference Update="Microsoft.IdentityModel.JsonWebTokens" Version="7.0.3" />
+    <PackageReference Update="Microsoft.IdentityModel.Tokens.Saml" Version="7.0.3" />
+    <PackageReference Update="System.IdentityModel.Tokens.Jwt" Version="7.0.3" />
+  </ItemGroup>
+</Project>

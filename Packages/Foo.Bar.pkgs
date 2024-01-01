@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <PackageReference Update="Foo.Bar" Version="unsupported" />
+  </ItemGroup>
+</Project>
