@@ -47,4 +47,11 @@
     <JwtBearerVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0,)</JwtBearerVersion>
     <JwtBearerVersion Condition="!$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">Unsupported</JwtBearerVersion>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <OpenIdConnectVersion>2.1.2</OpenIdConnectVersion>
+    <OpenIdConnectVersion Condition="'$(TargetFramework)' == 'net8.0'">8.0.0</OpenIdConnectVersion>
+    <OpenIdConnectVersion Condition="'$(TargetFramework)' == 'net7.0'">7.0.14</OpenIdConnectVersion>
+    <OpenIdConnectVersion Condition="'$(TargetFramework)' == 'net6.0'">6.0.25</OpenIdConnectVersion>
+  </PropertyGroup>
 </Project>
