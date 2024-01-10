@@ -48,6 +48,9 @@
 		<PackageReference Update="VsTools.Projects" Version="[1.2.0,)" />
 		<PackageReference Update="Yaml2JsonNode" Version="[1.1.0,)" />
 		<PackageReference Update="YamlDotNet" Version="[13.1.0,)" />
+		<PackageReference Update="Workleap.Extensions.Configuration.Substitution" Version="[1.1.2,)" />
+		<PackageReference Update="MimeKit" Version="[4.3.0,)" />
+		<PackageReference Update="MimeKitLite" Version="[4.3.0,)" />
 	</ItemGroup>
 	<ItemGroup Label="libphonenumber-csharp">
 		<PackageReference Remove="libphonenumber-csharp" Condition="$(TargetFramework.Equals('netstandard1.0'))" />
