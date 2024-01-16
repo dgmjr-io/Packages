@@ -51,6 +51,10 @@
 		<PackageReference Update="Workleap.Extensions.Configuration.Substitution" Version="[1.1.2,)" />
 		<PackageReference Update="MimeKit" Version="[4.3.0,)" />
 		<PackageReference Update="MimeKitLite" Version="[4.3.0,)" />
+		<PackageReference Update="NJsonSchema" Version="[10.9.0,)" />
+		<PackageReference Update="CommonMark.NET" Version="[0.15.1,)" />
+		<PackageReference Update="BSolutions.Brecons.Core" Version="[2.1.8,)" />
+		<PackageReference Update="BSolutions.Bocons" Version="[2.4.0,)" />
 	</ItemGroup>
 	<ItemGroup Label="libphonenumber-csharp">
 		<PackageReference Remove="libphonenumber-csharp" Condition="$(TargetFramework.Equals('netstandard1.0'))" />
