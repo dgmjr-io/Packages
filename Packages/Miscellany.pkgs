@@ -44,7 +44,7 @@
 		<PackageReference Update="Scriban.Signed" Version="[5.7.0,)" />
 		<PackageReference Update="Scriban" Version="[5.7.0,)" />
 		<PackageReference Update="Vogen.SharedTypes" Version="[0.0.1,)" />
-		<PackageReference Update="Vogen" Version="[3.0.6,)" />
+		<PackageReference Update="Vogen" Version="[3.0.24,)" />
 		<PackageReference Update="VsTools.Projects" Version="[1.2.0,)" />
 		<PackageReference Update="Yaml2JsonNode" Version="[1.1.0,)" />
 		<PackageReference Update="YamlDotNet" Version="[13.1.0,)" />
@@ -55,6 +55,7 @@
 		<PackageReference Update="CommonMark.NET" Version="[0.15.1,)" />
 		<PackageReference Update="BSolutions.Brecons.Core" Version="[2.1.8,)" />
 		<PackageReference Update="BSolutions.Bocons" Version="[2.4.0,)" />
+		<PackageReference Update="CorrelationId" Version="[3.0.1,)" />
 	</ItemGroup>
 	<ItemGroup Label="libphonenumber-csharp">
 		<PackageReference Remove="libphonenumber-csharp" Condition="$(TargetFramework.Equals('netstandard1.0'))" />

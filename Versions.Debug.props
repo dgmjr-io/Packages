@@ -14,6 +14,8 @@
     <PackageReference Update="Azure.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'Azure.Usings'" />
     <PackageReference Update="BuildHelper" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BuildHelper'" />
     <PackageReference Update="BuildHelper2" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'BuildHelper2'" />
+    <PackageReference Update="CacheAccessor.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CacheAccessor.Abstractions'" />
+    <PackageReference Update="CacheAccessor.Core" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CacheAccessor.Core'" />
     <PackageReference Update="ConfigurationSubstitution.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'ConfigurationSubstitution.Usings'" />
     <PackageReference Update="CsprojPackager" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CsprojPackager'" />
     <PackageReference Update="Csv2Sql" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Csv2Sql'" />
@@ -71,9 +73,7 @@
     <PackageReference Update="Dgmjr.Payloads" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Payloads'" />
     <PackageReference Update="Dgmjr.PowerShell.Classes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.PowerShell.Classes'" />
     <PackageReference Update="Dgmjr.Primitives" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Primitives'" />
-    <PackageReference Update="CacheAccessor.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CacheAccessor.Abstractions'" />
-    <PackageReference Update="CacheAccessor.Core" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'CacheAccessor.Core'" />
-    <PackageReference Update="Dgmjr.RegexDtoGenerator" Version="[0.0.0-beta.0.20, )" Condition="'$(PackageId)' != 'Dgmjr.RegexDtoGenerator'" />
+    <PackageReference Update="Dgmjr.RegexDtoGenerator" Version="[0.0.0-beta.0.23, )" Condition="'$(PackageId)' != 'Dgmjr.RegexDtoGenerator'" />
     <PackageReference Update="Dgmjr.Security" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Security'" />
     <PackageReference Update="Dgmjr.Security.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Security.Constants'" />
     <PackageReference Update="Dgmjr.System.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.System.Extensions'" />
@@ -97,7 +97,7 @@
     <PackageReference Update="Humanizer.Patch" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Humanizer.Patch'" />
     <PackageReference Update="Identity.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Identity.Usings'" />
     <PackageReference Update="InsultProducer" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'InsultProducer'" />
-    <PackageReference Update="InterfaceGenerator" Version="[0.0.0-beta.0.32, )" Condition="'$(PackageId)' != 'InterfaceGenerator'" />
+    <PackageReference Update="InterfaceGenerator" Version="[0.0.0-beta.0.35, )" Condition="'$(PackageId)' != 'InterfaceGenerator'" />
     <PackageReference Update="Invoke-Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Invoke-Build'" />
     <PackageReference Update="Invoke-DotNetCli" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Invoke-DotNetCli'" />
     <PackageReference Update="InvokeBuild" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'InvokeBuild'" />
