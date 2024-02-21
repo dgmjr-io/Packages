@@ -20,6 +20,12 @@
     <PackageReference Update="Microsoft.EntityFrameworkCore.Tools" Version="$(EfCoreVersion)" PrivateAssets="All" IncludeAssets="Runtime; Build; Native; ContentFiles; Analyzers; BuildTransitive" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.Design" Version="$(EfCoreVersion)" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.InMemory" Version="$(EfCoreVersion)" />
+    <PackageReference Update="Microsoft.EntityFrameworkCore.Proxies" Version="$(EfCoreVersion)" />
+    <PackageReference Update="Microsoft.EntityFrameworkCore.Design" Version="$(EfCoreVersion)" />
+
+    <PackageReference Update="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" Version="$(EfCoreVersion)" />
+    <PackageReference Update="NetTopologySuite" Version="[2.5.0,)" />
+
     <PackageReference Remove="Microsoft.EntityFrameworkCore.Sqlite"  Version="$(EfCoreVersion)" />
 
     <PackageReference Remove="Microsoft.EntityFrameworkCore" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />

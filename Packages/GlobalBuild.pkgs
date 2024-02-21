@@ -11,10 +11,10 @@
 -->
 
 <Project>
-  <ItemGroup Label="">
-    <GlobalPackageReference Include="Microsoft.Build.Artifacts" Version="[4.2.0,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive; compile;" PrivateAssets="All" />
-    <GlobalPackageReference Include="Microsoft.Build.Tasks.Git" Version="[1.1.1,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive; compile; tools" PrivateAssets="All" />
-    <GlobalPackageReference Include="Microsoft.SourceLink.GitHub" Version="[1.1.1,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive; compile; tools" PrivateAssets="All" />
+  <ItemGroup>
+    <GlobalPackageReference Include="Microsoft.Build.Artifacts" Version="[6.1.10,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive; compile;" PrivateAssets="All" />
+    <GlobalPackageReference Include="Microsoft.Build.Tasks.Git" Version="[8.0.0,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive; compile; tools" PrivateAssets="All" />
+    <GlobalPackageReference Include="Microsoft.SourceLink.GitHub" Version="[8.0.0,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive; compile; tools" PrivateAssets="All" />
     <GlobalPackageReference Include="MinVer" Version="[4.2.0,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; compile;" Condition="'$(ImportMinVer)' != 'false'" PrivateAssets="All"  />
     <GlobalPackageReference Include="NuGetizer" Version="[1.0.4,)" IncludeAssets="build; compile;" PrivateAssets="All"  />
     <GlobalPackageReference Include="GitInfo" Version="[3.3.3,)" IncludeAssets="build; analyzers; compile;" PrivateAssets="All"  />

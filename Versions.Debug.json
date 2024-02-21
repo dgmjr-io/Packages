@@ -158,6 +158,7 @@
   "Telegram.Constants": "0.0.1-Local",
   "Telegram.Identity": "0.0.1-Local",
   "Telegram.JsonConverters": "0.0.1-Local",
+  "TelegramBotBase.Extensions.Serializer.Redis": "1.0.0",
   "Test.Usings": "0.0.1-Local",
   "TestConsole": "0.0.1-Local",
   "Testing": "0.0.1-Local",

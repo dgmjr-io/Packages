@@ -16,10 +16,10 @@
 		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.1.6,)</EfCoreVersion>
 		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[3.1.32,)</EfCoreVersion>
 		<EfCoreVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[5.0.17,)</EfCoreVersion>
-		<EfCoreVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.25,)</EfCoreVersion>
-		<EfCoreVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.14,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.26,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.15,)</EfCoreVersion>
 		<!-- <EfCoreVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0,)</EfCoreVersion> -->
-		<EfCoreVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0,)</EfCoreVersion>
+		<EfCoreVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.2,)</EfCoreVersion>
 		<EfCoreVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">Unsupported</EfCoreVersion>
 
     <HealthChecksEfCoreVersion Condition="'$(TargetFramework)' != 'netstandard2.0'">$(EfCoreVersion)</HealthChecksEfCoreVersion>

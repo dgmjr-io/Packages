@@ -1,11 +1,11 @@
 <!--
  * NuGet.pkgs
- * 
+ *
  *   Created: 2022-11-23-07:06:33
  *   Modified: 2022-11-23-02:47:33
- * 
+ *
  *   Author: David G. Mooore, Jr. <david@dgmjr.io>
- *   
+ *
  *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
@@ -14,13 +14,13 @@
   <ItemGroup>
     <PackageReference Update="NuGet.Client" Version="[4.2.0,)" />
     <PackageReference Update="NuGet.Repositories" Version="[4.2.0,)" />
-    <PackageReference Update="NuGet.Commands" Version="[6.3.1,)" />
-    <PackageReference Update="NuGet.Common" Version="[6.3.1,)" />
-    <PackageReference Update="NuGet.Configuration" Version="[6.3.1,)" />
-    <PackageReference Update="NuGet.Credentials" Version="[6.3.1,)" />
-    <PackageReference Update="NuGet.PackageManagement" Version="[6.3.1,)" />
-    <PackageReference Update="NuGet.Packaging" Version="[6.3.1,)" />
-    <PackageReference Update="NuGet.Protocol" Version="[6.3.1,)" />
-    <PackageReference Update="NuGet.Resolver" Version="[6.3.1,)" />
+    <PackageReference Update="NuGet.Commands" Version="[6.8.0,)" />
+    <PackageReference Update="NuGet.Common" Version="[6.8.0,)" />
+    <PackageReference Update="NuGet.Configuration" Version="[6.8.0,)" />
+    <PackageReference Update="NuGet.Credentials" Version="[6.8.0,)" />
+    <PackageReference Update="NuGet.PackageManagement" Version="[6.8.0,)" />
+    <PackageReference Update="NuGet.Packaging" Version="[6.8.0,)" />
+    <PackageReference Update="NuGet.Protocol" Version="[6.8.0,)" />
+    <PackageReference Update="NuGet.Resolver" Version="[6.8.0,)" />
   </ItemGroup>
 </Project>

@@ -89,6 +89,7 @@
   "Dgmjr.Payloads": "0.0.1-Local",
   "Dgmjr.PowerShell.Classes": "0.0.1-Local",
   "Dgmjr.Primitives": "0.0.1",
+  "Dgmjr.Razor.Components": "0.0.1-Local",
   "Dgmjr.RegexDtoGenerator": "0.0.1-Local",
   "Dgmjr.RegexDtoGenerator.Samples": "0.0.1-Local",
   "Dgmjr.Security": "0.0.1-Local",

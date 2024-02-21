@@ -165,6 +165,7 @@
     <PackageReference Update="Telegram.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Telegram.Constants'" />
     <PackageReference Update="Telegram.Identity" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Telegram.Identity'" />
     <PackageReference Update="Telegram.JsonConverters" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Telegram.JsonConverters'" />
+    <PackageReference Update="TelegramBotBase.Extensions.Serializer.Redis" Version="[1.0.0, )" Condition="'$(PackageId)' != 'TelegramBotBase.Extensions.Serializer.Redis'" />
     <PackageReference Update="Test.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Test.Usings'" />
     <PackageReference Update="TestConsole" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'TestConsole'" />
     <PackageReference Update="Testing" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Testing'" />

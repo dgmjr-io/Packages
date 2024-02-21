@@ -12,9 +12,9 @@
 
 <Project>
   <PropertyGroup Label="Json Patch">
-    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.25,)</NewtonsoftJsonVersion>
-    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.14,)</NewtonsoftJsonVersion>
-    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.0,)</NewtonsoftJsonVersion>
+    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.26,)</NewtonsoftJsonVersion>
+    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">[7.0.15,)</NewtonsoftJsonVersion>
+    <NewtonsoftJsonVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.1,)</NewtonsoftJsonVersion>
     <NewtonsoftJsonVersion Condition="!$(DefineConstants.Contains('NETSTANDARD'))">Unsupported</NewtonsoftJsonVersion>
   </PropertyGroup>
 </Project>

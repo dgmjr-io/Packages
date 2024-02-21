@@ -1,5 +1,7 @@
 <Project>
   <ItemGroup>
     <PackageReference Update="Microsoft.Identity.Web.MicrosoftGraph" Version="[2.16.0,)" />
+    <PackageReference Update="Microsoft.Graph.Beta" Version="[5.64.0-preview,)" />
+    <PackageReference Update="Microsoft.Graph.Auth" Version="[1.0.0-preview.6,)" />
   </ItemGroup>
 </Project>

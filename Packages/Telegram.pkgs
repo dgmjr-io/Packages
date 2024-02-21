@@ -17,5 +17,6 @@
     <ItemGroup Label="Telegram">
         <PackageReference Update="Telegram.Bot" Version="$(TelegramBotVersion)" />
         <PackageReference Update="WTelegramClient" Version="[3.5.9,)" />
+        <PackageReference Update="TelegramBotBase" Version="[6.0.0,)" />
     </ItemGroup>
 </Project>
