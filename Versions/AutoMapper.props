@@ -4,9 +4,9 @@
  *   Created: 2023-01-28-07:11:49
  *   Modified: 2023-01-28-07:11:49
  *
- *   Author: David G. Moore, Jr. <david@dgmjr.io>
+ *   Author: David G. Mooore, Jr. <justin@Dgmjr.com>
  *
- *   Copyright © 2022-2023 David G. Moore, Jr., All Rights Reserved
+ *   Copyright © 2022-2023 David G. Mooore, Jr., All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
@@ -18,13 +18,19 @@
     <AutoMapperVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[10.1.1,)</AutoMapperVersion>
     <AutoMapperVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[12.0.1,)</AutoMapperVersion>
 
-    <AutoMapperDIVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">Unsupported)</AutoMapperDIVersion>
+    <AutoMapperDIVersion Condition="!$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">Unsupported</AutoMapperDIVersion>
     <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_1_OR_GREATER'))">[2.0.1,)</AutoMapperDIVersion>
     <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[8.1.1,)</AutoMapperDIVersion>
     <AutoMapperDIVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[12.0.1,)</AutoMapperDIVersion>
 
-    <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD1_3_OR_GREATER'))">[1.0.5,)</AutoMapperExpresionMappingVersion>
+    <AutoMapperExpresionMappingVersion Condition="!$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">Unsupported</AutoMapperExpresionMappingVersion>
     <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[4.1.5,)</AutoMapperExpresionMappingVersion>
     <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[6.0.4,)</AutoMapperExpresionMappingVersion>
+    <AutoMapperExpresionMappingVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[7.0.7,)</AutoMapperExpresionMappingVersion>
+
+    <AutoMapperEnumMappingVersion Condition="!$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">Unsupported</AutoMapperEnumMappingVersion>
+    <AutoMapperEnumMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_0_OR_GREATER'))">[1.1.0,)</AutoMapperEnumMappingVersion>
+    <AutoMapperEnumMappingVersion Condition="$(DefineConstants.Contains('NETSTANDARD2_1_OR_GREATER'))">[3.1.0,)</AutoMapperEnumMappingVersion>
+    <AutoMapperEnumMappingVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[3.2.0,)</AutoMapperEnumMappingVersion>
   </PropertyGroup>
 </Project>

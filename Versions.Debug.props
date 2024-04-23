@@ -33,6 +33,9 @@
     <PackageReference Update="Dgmjr.AspNetCore.Startup" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Startup'" />
     <PackageReference Update="Dgmjr.AspNetCore.Swagger" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Swagger'" />
     <PackageReference Update="Dgmjr.Attributes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Attributes'" />
+    <PackageReference Update="Dgmjr.BotFramework.Core" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.BotFramework.Core'" />
+    <PackageReference Update="Dgmjr.BotFramework.EntityFrameworkCore" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.BotFramework.EntityFrameworkCore'" />
+    <PackageReference Update="Dgmjr.BotFramework.Translation" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.BotFramework.Translation'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Abstractions'" />
     <PackageReference Update="Dgmjr.CodeGeneration.CompileTimeComputation" Version="[0.0.0-beta.0.22, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.CompileTimeComputation'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Constants'" />
@@ -52,6 +55,7 @@
     <PackageReference Update="Dgmjr.Enumerations.Enumeration" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Enumerations.Enumeration'" />
     <PackageReference Update="Dgmjr.GetOrSetFromRedisCache" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.GetOrSetFromRedisCache'" />
     <PackageReference Update="Dgmjr.Global.Json" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Global.Json'" />
+    <PackageReference Update="Dgmjr.Hosting.Extensions" Version="[0.0.67+main.f8f9739, )" Condition="'$(PackageId)' != 'Dgmjr.Hosting.Extensions'" />
     <PackageReference Update="Dgmjr.Http.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Http.Extensions'" />
     <PackageReference Update="Dgmjr.Http.Meta" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Http.Meta'" />
     <PackageReference Update="Dgmjr.Identity.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Identity.Abstractions'" />
@@ -81,7 +85,7 @@
     <PackageReference Update="Dgmjr.Testing.Tests.Abstractions" Version="[0.0.0-beta.0, )" Condition="'$(PackageId)' != 'Dgmjr.Testing.Tests.Abstractions'" />
     <PackageReference Update="Dgmjr.Tuples" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Tuples'" />
     <PackageReference Update="Dgmjr.TypeScript" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.TypeScript'" />
-    <PackageReference Update="DgmjrSdk" Version="[0.0.18-beta.0.2, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
+    <PackageReference Update="DgmjrSdk" Version="[0.0.23, )" Condition="'$(PackageId)' != 'DgmjrSdk'" />
     <PackageReference Update="Directory.Build" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Directory.Build'" />
     <PackageReference Update="EFC.Usings" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'EFC.Usings'" />
     <PackageReference Update="EmbedProjectFile" Version="[0.0.1, )" Condition="'$(PackageId)' != 'EmbedProjectFile'" />

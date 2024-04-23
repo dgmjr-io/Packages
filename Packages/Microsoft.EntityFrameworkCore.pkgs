@@ -12,6 +12,7 @@
 
 <Project>
   <ItemGroup Label="Microsoft.EntityFrameworkCore">
+    <PackageReference Update="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="$(EfCoreVersion)" />
     <PackageReference Update="Microsoft.EntityFrameworkCore" Version="$(EfCoreVersion)" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.Abstractions" Version="$(EfCoreVersion)" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.Analyzers" Version="$(EfCoreVersion)" />
@@ -22,11 +23,12 @@
     <PackageReference Update="Microsoft.EntityFrameworkCore.InMemory" Version="$(EfCoreVersion)" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.Proxies" Version="$(EfCoreVersion)" />
     <PackageReference Update="Microsoft.EntityFrameworkCore.Design" Version="$(EfCoreVersion)" />
+    <PackageReference Update="Microsoft.EntityFrameworkCore.Cosmos" Version="$(EfCoreVersion)" />
+    <PackageReference Update="Microsoft.EntityFrameworkCore.Sqlite" Version="$(EfCoreVersion)" />
 
     <PackageReference Update="Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite" Version="$(EfCoreVersion)" />
-    <PackageReference Update="NetTopologySuite" Version="[2.5.0,)" />
 
-    <PackageReference Remove="Microsoft.EntityFrameworkCore.Sqlite"  Version="$(EfCoreVersion)" />
+    <!-- <PackageReference Remove="Microsoft.EntityFrameworkCore.Sqlite"  Version="$(EfCoreVersion)" /> -->
 
     <PackageReference Remove="Microsoft.EntityFrameworkCore" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
     <PackageReference Remove="Microsoft.EntityFrameworkCore.Abstractions" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
@@ -38,6 +40,7 @@
     <PackageReference Remove="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
     <PackageReference Remove="Microsoft.EntityFrameworkCore.InMemory" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
     <PackageReference Remove="Microsoft.EntityFrameworkCore.Sqlite" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
+    <PackageReference Remove="Microsoft.EntityFrameworkCore.Cosmos" Condition="'$(EfCoreVersion)' == '' Or '$(EfCoreVersion)' == 'Unsupported'" />
     <!-- <PackageReference Update="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="[1.1.6,)" /> -->
 
     <PackageReference Update="EntityFrameworkCore.Data.QueryBuilder.Abstractions" Version="6.0.9" />

@@ -42,6 +42,7 @@
 		<PackageReference Update="JsonSchema.Net.UniqueKeys" Version="[2.1.0,)" />
 		<PackageReference Update="JsonSchema.Net" Version="[4.1.0,)" />
 		<PackageReference Update="JsonSubTypes" Version="[2.0.1,)" />
+		<PackageReference Update="Markdig" Version="[0.36.2,)" />
 		<PackageReference Update="MimeKit" Version="[4.3.0,)" />
 		<PackageReference Update="MimeKitLite" Version="[4.3.0,)" />
 		<PackageReference Update="NJsonSchema" Version="[10.9.0,)" />
@@ -56,6 +57,9 @@
 		<PackageReference Update="Workleap.Extensions.Configuration.Substitution" Version="[1.1.2,)" />
 		<PackageReference Update="Yaml2JsonNode" Version="[1.1.0,)" />
 		<PackageReference Update="YamlDotNet" Version="[15.1.0,)" />
+		<PackageReference Update="NetTopologySuite" Version="[2.5.0,)" />
+		<PackageReference Update="NetTopologySuite.IO.GeoJSON" Version="[4.0.0,)" />
+		<PackageReference Update="UnitsNet" Version="[5.48.0,)" />
 	</ItemGroup>
 	<ItemGroup Label="libphonenumber-csharp">
 		<PackageReference Remove="libphonenumber-csharp" Condition="$(TargetFramework.Equals('netstandard1.0'))" />

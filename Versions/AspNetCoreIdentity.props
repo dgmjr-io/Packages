@@ -35,7 +35,7 @@
 
   <PropertyGroup>
     <OpenApiVersion Condition="$(DefineConstants.Contains('NET7_0_OR_GREATER'))">7.0.14</OpenApiVersion>
-    <OpenApiVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">8.0.0</OpenApiVersion>
+    <OpenApiVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">8.0.2</OpenApiVersion>
     <OpenApiVersion Condition="!$(DefineConstants.Contains('NET7_0_OR_GREATER'))">unsupported</OpenApiVersion>
   </PropertyGroup>
 
