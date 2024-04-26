@@ -48,6 +48,8 @@
 		<PackageReference Update="NJsonSchema" Version="[10.9.0,)" />
 		<PackageReference Update="ProxyInterfaceGenerator" Version="[0.0.24,)" />
 		<PackageReference Update="ProxyInterfaceSourceGenerator" Version="[0.0.25,)" />
+		<PackageReference Update="Refit" Version="[7.0.0,)" />
+		<PackageReference Update="Refit.HttpClientFactory" Version="[7.0.0,)" />
 		<PackageReference Update="RestSharp" Version="[108.0.3,)" />
 		<PackageReference Update="Scriban.Signed" Version="[5.7.0,)" />
 		<PackageReference Update="Scriban" Version="[5.7.0,)" />
