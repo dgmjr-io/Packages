@@ -12,7 +12,7 @@
 
 <Project>
     <PropertyGroup>
-        <TelegramBotVersion>[19.0.0-DgmjrMods,)</TelegramBotVersion>
+        <TelegramBotVersion>[20.0.0-alpha.1,)</TelegramBotVersion>
     </PropertyGroup>
     <ItemGroup Label="Telegram">
         <PackageReference Update="Telegram.Bot" Version="$(TelegramBotVersion)" />

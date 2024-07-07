@@ -15,7 +15,8 @@
 		<IncludeInSolutionFile>false</IncludeInSolutionFile>
   </PropertyGroup>
 	<PropertyGroup Label="Compatible with .NET Standard 1.0">
-		<Net80CompatibleFrameworks>net8.0</Net80CompatibleFrameworks>
+		<Net90CompatibleFrameworks>net9.0</Net90CompatibleFrameworks>
+		<Net80CompatibleFrameworks>$(Net90CompatibleFrameworks);net8.0</Net80CompatibleFrameworks>
 		<Net70CompatibleFrameworks>$(Net80CompatibleFrameworks);net7.0</Net70CompatibleFrameworks>
 		<Net60CompatibleFrameworks>$(Net70CompatibleFrameworks);net6.0</Net60CompatibleFrameworks>
 		<Net50CompatibleFrameworks>$(Net60CompatibleFrameworks);net6.0</Net50CompatibleFrameworks>
@@ -31,6 +32,7 @@
 		<NetStd10CompatibleFrameworks>$(NetStd11CompatibleFrameworks);netstandard1.0</NetStd10CompatibleFrameworks>
 	</PropertyGroup>
 	<PropertyGroup Label="Master Versions">
+		<DefineConstants Condition="$(Net90CompatibleFrameworks.Contains('$(TargetFramework)'))">$(DefineConstants);NET9_0;NET9_0_OR_GREATER</DefineConstants>
 		<DefineConstants Condition="$(Net80CompatibleFrameworks.Contains('$(TargetFramework)'))">$(DefineConstants);NET8_0;NET8_0_OR_GREATER</DefineConstants>
 		<DefineConstants Condition="$(Net70CompatibleFrameworks.Contains('$(TargetFramework)'))">$(DefineConstants);NET7_0;NET7_0_OR_GREATER</DefineConstants>
 		<DefineConstants Condition="$(Net600CompatibleFrameworks.Contains('$(TargetFramework)'))">$(DefineConstants);NET6_0;NET6_0_OR_GREATER</DefineConstants>
@@ -48,6 +50,7 @@
 		<DefineConstants Include="$(DefineConstants)" />
 	</ItemGroup>
 	<ItemGroup Label="Master Versions">
+		<CompatibleFrameworks Condition="$(Net90CompatibleFrameworks.Contains('$(TargetFramework)'))" Include="$(Net90CompatibleFrameworks)" />
 		<CompatibleFrameworks Condition="$(Net80CompatibleFrameworks.Contains('$(TargetFramework)'))" Include="$(Net80CompatibleFrameworks)" />
 		<CompatibleFrameworks Condition="$(Net70CompatibleFrameworks.Contains('$(TargetFramework)'))" Include="$(Net70CompatibleFrameworks)" />
 		<CompatibleFrameworks Condition="$(Net600CompatibleFrameworks.Contains('$(TargetFramework)'))" Include="$(Net600CompatibleFrameworks)" />
@@ -120,6 +123,10 @@
     <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETCoreApp</TargetFrameworkIdentifier>
     <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v8.0</TargetFrameworkVersion>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
+    <TargetFrameworkIdentifier Condition="'$(TargetFrameworkIdentifier)' == ''">.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition=" '$(TargetFrameworkVersion)' == '' ">v98.0</TargetFrameworkVersion>
+  </PropertyGroup>
   <PropertyGroup>
     <_TargetFrameworkVersionWithoutV>$(TargetFrameworkVersion.Replace("v", ""))</_TargetFrameworkVersionWithoutV>
   </PropertyGroup>
@@ -138,6 +145,7 @@
     <Message  Text="NET6_0_OR_GREATER: $(DefineConstants).Contains('NET6_0_OR_GREATER')): [6.0.12,)" />
     <Message  Text="NET7_0_OR_GREATER: $(DefineConstants).Contains('NET7_0_OR_GREATER')): [7.0.1,)" />
     <Message  Text="NET8_0_OR_GREATER: $(DefineConstants).Contains('NET8_0_OR_GREATER')): [8.0.0,)" />
+    <Message  Text="NET9_0_OR_GREATER: $(DefineConstants).Contains('NET9_0_OR_GREATER')): [9.0.0,)" />
   </Target>
   <ItemGroup>
     <DefineConstants Include="$(DefineConstants)" />

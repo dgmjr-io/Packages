@@ -17,7 +17,7 @@
     <GlobalPackageReference Include="Microsoft.SourceLink.GitHub" Version="[8.0.0,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive; compile; tools" PrivateAssets="All" />
     <GlobalPackageReference Include="MinVer" Version="[5.0.0,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; compile;" Condition="'$(ImportMinVer)' != 'false'" PrivateAssets="All"  />
     <GlobalPackageReference Include="NuGetizer" Version="[1.2.1,)" IncludeAssets="build; compile;" PrivateAssets="All"  />
-    <GlobalPackageReference Include="GitInfo" Version="[3.3.4,)" IncludeAssets="build; analyzers; compile;" PrivateAssets="All"  />
+    <GlobalPackageReference Include="GitInfo" Version="[3.3.5,)" IncludeAssets="build; analyzers; compile;" PrivateAssets="All"  />
     <!-- <GlobalPackageReference Include="PolyKit" Version="[3.0.9,)" IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive; compile; tools" PrivateAssets="None" /> -->
   </ItemGroup>
   <PropertyGroup>

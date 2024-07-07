@@ -1,0 +1,16 @@
+<!--
+ * Microsoft.AspNetCore.props
+ *     Created: 2024-06-02T21:47:00-04:00
+ *    Modified: 2024-06-17T19:56:05-04:00
+ *      Author: David G. Moore, Jr. <david@dgmjr.io>
+ *   Copyright: © 2022 - 2024 David G. Moore, Jr., All Rights Reserved
+ *     License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <PropertyGroup>
+    <OpenIdConnectVersion>[2.1.2,)</OpenIdConnectVersion>
+    <OpenIdConnectVersion Condition="$(DefineConstants.Contains('NET6_0_OR_GREATER'))">[6.0.31,)</OpenIdConnectVersion>
+    <OpenIdConnectVersion Condition="$(DefineConstants.Contains('NET8_0_OR_GREATER'))">[8.0.6,)</OpenIdConnectVersion>
+  </PropertyGroup>
+</Project>

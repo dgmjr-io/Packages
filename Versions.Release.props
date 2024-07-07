@@ -36,6 +36,7 @@
     <PackageReference Update="Dgmjr.AspNetCore.Startup" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Startup'" />
     <PackageReference Update="Dgmjr.AspNetCore.Swagger" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Swagger'" />
     <PackageReference Update="Dgmjr.Attributes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Attributes'" />
+    <PackageReference Update="Dgmjr.Build.NoTargets" Version="[0.0.25, )" Condition="'$(PackageId)' != 'Dgmjr.Build.NoTargets'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Abstractions'" />
     <PackageReference Update="Dgmjr.CodeGeneration.AttributeSymbolExtensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.AttributeSymbolExtensions'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Constants'" />
@@ -93,6 +94,7 @@
     <PackageReference Update="Dgmjr.MSBuild.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.MSBuild.Extensions'" />
     <PackageReference Update="Dgmjr.MSBuild.Tasks.DotNetCliTask" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.MSBuild.Tasks.DotNetCliTask'" />
     <PackageReference Update="Dgmjr.MSBuild.Utils.GetAllProperties" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.MSBuild.Utils.GetAllProperties'" />
+    <PackageReference Update="Dgmjr.NET.Sdk" Version="[0.0.25, )" Condition="'$(PackageId)' != 'Dgmjr.NET.Sdk'" />
     <PackageReference Update="Dgmjr.Payloads" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Payloads'" />
     <PackageReference Update="Dgmjr.PowerShell.Classes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.PowerShell.Classes'" />
     <PackageReference Update="Dgmjr.Primitives" Version="[0.0.1, )" Condition="'$(PackageId)' != 'Dgmjr.Primitives'" />
@@ -158,6 +160,7 @@
     <PackageReference Update="ProjectPackageReferencesSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'ProjectPackageReferencesSdk'" />
     <PackageReference Update="PSProj" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'PSProj'" />
     <PackageReference Update="ReinstallModule" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'ReinstallModule'" />
+    <PackageReference Update="ReverseProxy" Version="[0.0.0-preview.0.39, )" Condition="'$(PackageId)' != 'ReverseProxy'" />
     <PackageReference Update="Scriban" Version="[5.8.0-DgmjrMods, )" Condition="'$(PackageId)' != 'Scriban'" />
     <PackageReference Update="Scriban.Signed" Version="[5.8.0-DgmjrMods, )" Condition="'$(PackageId)' != 'Scriban.Signed'" />
     <PackageReference Update="Sdk.Usings" Version="[0.0.1, )" Condition="'$(PackageId)' != 'Sdk.Usings'" />

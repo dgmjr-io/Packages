@@ -121,7 +121,7 @@
     <PackageReference Update="Microsoft.AspNetCore.Mvc.Core" Version="[2.1.38,)" />
     <PackageReference Update="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="[2.1.18,)" />
     <PackageReference Update="Microsoft.AspNetCore.Mvc.Formatters.Xml" Version="[2.1.3,)" />
-    <PackageReference Update="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(NewtonsoftJsonVersion)" Condition="!$(TargetFramework.Contains('netstandard'))" />
+    <PackageReference Update="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="$(NewtonsoftJsonVersion)" />
     <PackageReference Update="Microsoft.AspNetCore.Mvc.RazorPages" Version="[2.1.11,)" />
     <PackageReference Update="Microsoft.AspNetCore.Mvc.TagHelpers" Version="[2.1.3,)" />
     <PackageReference Update="Microsoft.AspNetCore.Mvc" Version="[2.1.3,)" />

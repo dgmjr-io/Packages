@@ -29,13 +29,16 @@
     <PackageReference Update="Dgmjr.AspNetCore.Hashids" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Hashids'" />
     <PackageReference Update="Dgmjr.AspNetCore.Hosting.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Hosting.Extensions'" />
     <PackageReference Update="Dgmjr.AspNetCore.Mvc" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Mvc'" />
-    <PackageReference Update="Dgmjr.AspNetCore.Security" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Security'" />
+    <PackageReference Update="Dgmjr.AspNetCore.Security" Version="[0.0.0+main.f8f9739, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Security'" />
+    <PackageReference Update="Dgmjr.AspNetCore.Security.Abstractions" Version="[0.0.67+main.f8f9739, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Security.Abstractions'" />
     <PackageReference Update="Dgmjr.AspNetCore.Startup" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Startup'" />
     <PackageReference Update="Dgmjr.AspNetCore.Swagger" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.AspNetCore.Swagger'" />
     <PackageReference Update="Dgmjr.Attributes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Attributes'" />
-    <PackageReference Update="Dgmjr.BotFramework.Core" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.BotFramework.Core'" />
+    <PackageReference Update="Dgmjr.BotFramework.Actions" Version="[0.0.0+change-iservicecollectionextensions-to-hostingstartups.a5ae44c, )" Condition="'$(PackageId)' != 'Dgmjr.BotFramework.Actions'" />
+    <PackageReference Update="Dgmjr.BotFramework.Core" Version="[0.0.0+change-iservicecollectionextensions-to-hostingstartups.4b7c5f8, )" Condition="'$(PackageId)' != 'Dgmjr.BotFramework.Core'" />
     <PackageReference Update="Dgmjr.BotFramework.EntityFrameworkCore" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.BotFramework.EntityFrameworkCore'" />
     <PackageReference Update="Dgmjr.BotFramework.Translation" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.BotFramework.Translation'" />
+    <PackageReference Update="Dgmjr.Build.NoTargets" Version="[0.0.25, )" Condition="'$(PackageId)' != 'Dgmjr.Build.NoTargets'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Abstractions'" />
     <PackageReference Update="Dgmjr.CodeGeneration.CompileTimeComputation" Version="[0.0.0-beta.0.22, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.CompileTimeComputation'" />
     <PackageReference Update="Dgmjr.CodeGeneration.Constants" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.CodeGeneration.Constants'" />
@@ -74,6 +77,7 @@
     <PackageReference Update="Dgmjr.MSBuild.Extensions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.MSBuild.Extensions'" />
     <PackageReference Update="Dgmjr.MSBuild.Tasks.DotNetCliTask" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.MSBuild.Tasks.DotNetCliTask'" />
     <PackageReference Update="Dgmjr.MSBuild.Utils.GetAllProperties" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.MSBuild.Utils.GetAllProperties'" />
+    <PackageReference Update="Dgmjr.NET.Sdk.Web" Version="[0.0.25, )" Condition="'$(PackageId)' != 'Dgmjr.NET.Sdk.Web'" />
     <PackageReference Update="Dgmjr.Payloads" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Payloads'" />
     <PackageReference Update="Dgmjr.PowerShell.Classes" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.PowerShell.Classes'" />
     <PackageReference Update="Dgmjr.Primitives" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'Dgmjr.Primitives'" />
@@ -130,6 +134,7 @@
     <PackageReference Update="ProjectFilePackager" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'ProjectFilePackager'" />
     <PackageReference Update="ProjectPackageReferencesSdk" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'ProjectPackageReferencesSdk'" />
     <PackageReference Update="ReinstallModule" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'ReinstallModule'" />
+    <PackageReference Update="ReverseProxy" Version="[0.0.0-beta.0.39, )" Condition="'$(PackageId)' != 'ReverseProxy'" />
     <PackageReference Update="SendPulse.Api" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'SendPulse.Api'" />
     <PackageReference Update="SendPulse.Api.Abstractions" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'SendPulse.Api.Abstractions'" />
     <PackageReference Update="SendPulse.Api.All" Version="[0.0.1-Local, )" Condition="'$(PackageId)' != 'SendPulse.Api.All'" />
