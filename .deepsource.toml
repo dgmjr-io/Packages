@@ -1,9 +1,10 @@
 version = 1
 
 [[analyzers]]
+name = "shell"
+
+[[analyzers]]
 name = "csharp"
-enabled = true
 
 [[transformers]]
 name = "dotnet-format"
-enabled = true
